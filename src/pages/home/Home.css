@@ -1,0 +1,83 @@
+.box_shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.gradient {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(244, 248, 254, 1) 65%);
+}
+
+.cta_section2 {
+    position: relative;
+    background-image: url("https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Group_72171.png?v=1712918882");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+}
+
+.cta_section {
+    position: relative;
+    background-image: url("https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Rectangle_42.png?v=1713360636");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+}
+/* 
+.cta_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1A73E8CC;
+    z-index: 1;
+}
+
+.cta_section .cta_section_cont {
+    position: relative;
+    z-index: 2;
+}
+
+.cta_section h2,
+.cta_section .Button {
+    filter: none;
+} */
+
+
+.mainHeading {
+    font-size: 2.9rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    max-width: 37rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .mainHeading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 3rem;
+        max-width: 37rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mainHeading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 2.8rem;
+        max-width: 37rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .mainHeading {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        max-width: 37rem;
+    }
+}
