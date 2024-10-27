@@ -17,6 +17,8 @@ import NotFound from "./components/NotFound";
 import Header from "./components/Header";
 import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 import "./App.css";
+import { Toaster } from "react-hot-toast";
+import DoMyClass from "./pages/services/DoMyClass";
 
 function App() {
   const tawkMessengerRef = useRef();
@@ -54,6 +56,7 @@ function App() {
           <Route path="/exams" element={<Exams />} />
           <Route path="/assignments" element={<Assignments />} />
           <Route path="/online-classes" element={<OnlineClasses />} />
+          <Route path="/do-my-class" element={<DoMyClass />} />
         </Routes>
 
         {/* WhatsApp button */}
@@ -68,6 +71,7 @@ function App() {
 
         {/* <Dummy /> */}
         <Footer />
+        <Toaster />
       </BrowserRouter>
     </>
   );

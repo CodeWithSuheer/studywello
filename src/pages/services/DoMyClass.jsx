@@ -14,10 +14,17 @@ import { Helmet } from "react-helmet";
 import "../home/Home.css";
 import CtaOneV2 from "../../components/CtaOneV2";
 import EmailForm from "../../components/EmailForm";
-import ExpertsAvailable from "../../components/ExpertsAvailable";
+import NumberField from "../../components/NumberField";
+
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { IoChatbubbleSharp } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
+
+import { FaPhone } from "react-icons/fa6";
+import SeoContentBlock from "../../components/SeoContentBlock";
 
 
-const OnlineClasses = () => {
+const DoMyClass = () => {
   const images = [
     {
       img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss1.png?v=1713880333",
@@ -37,7 +44,7 @@ const OnlineClasses = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Pay Someone To Do My Class For Me | Take My Class</title>
+        <title>Do My Class</title>
       </Helmet>
 
       {/* --------------- HERO SECTION ---------------  */}
@@ -45,42 +52,74 @@ const OnlineClasses = () => {
         <div className="max-w-7xl mx-auto flex md:px-10 pt-28 pb-10 lg:flex-row flex-col items-center">
           {/* CONTENT */}
           <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
-            <h2 className="mb-3 sm:mb-4 text-2xl sm:text-3xl font-semibold tracking-wide w-full lg:max-w-sm md:text-3xl lg:text-4xl">
-              Pay Someone To Do My Class to Boost my Grades
+
+            <h2 className="mb-3 sm:mb-3 text-2xl sm:text-3xl font-semibold tracking-wide w-full lg:max-w-xl md:text-3xl lg:text-4xl">
+              Struggling To Keep Up With Your Online Classes?
             </h2>
-            <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
-              Struggling to keep up with your online classes? Don't worry,
-              Studywello is here to help! Our experienced tutors and academic
-              experts can provide you with the support you need to succeed in
-              your coursework.
+            <p className="mb-3 sm:mb-4 text-md sm:text-lg w-full sm:max-w-lg font-normal">
+              Pay us to handle your coursework, assignments, and discussions. Ace your classes stress-free with our online class help services.
             </p>
 
-            <div className="button mt-4 flex justify-start items-center gap-x-7">
-              <div className="text-center bg-gradient-to-tl from-blue-500 via-purple-500 to-pink-500 rounded-lg text-white px-5 py-3">
-                <h2 className="mb-1 text-3xl font-semibold">8200+</h2>
-                <p className="text-sm">Classes With A/B</p>
-              </div>
+            <h2 className="mb-3 sm:mb-3 text-2xl sm:text-3xl font-bold tracking-wide w-full lg:max-w-sm md:text-3xl">
+              Get a quote in 5 Minutes
+            </h2>
 
+            <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
+              Get a text Back in 5 Minutes!
+            </p>
 
-              <div className="text-center bg-gradient-to-tl from-blue-500 via-purple-500 to-pink-500 rounded-lg text-white px-5 py-3">
-                <h2 className="mb-1 text-3xl font-semibold">9.8/10</h2>
-                <p className="text-sm">Feedback rating</p>
+            <div className="mb-3 button w-full">
+              <div className="max-w-sm">
+                <div className="relative">
+                  <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <FaPhone className='text-blue-600' size={20} />
+                  </div>
+                  <input
+                    type="search"
+                    id="default-search"
+                    className="block w-full p-3 ps-10 text-md text-gray-900 border focus:border-transparent border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Phone Number*"
+                    required=""
+                  />
+                  <button
+                    type="submit"
+                    className="text-white absolute end-2.5 bottom-1.5 bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-4 py-2"
+                  >
+                    Text Me
+                  </button>
+                </div>
               </div>
             </div>
 
-            <ExpertsAvailable />
+            <div className="buttons flex justify-center items-center flex-wrap gap-2">
+              <a
+                href="https://api.whatsapp.com/send?phone=17163749747"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex text-nowrap w-32 justify-center shadow-sm border border-gray-300 gap-x-1 items-center bg-white text-black font-medium rounded-md text-sm px-5 py-2.5"><IoLogoWhatsapp className='text-green-500' size={22} /> Whatsapp</a>
+
+              <button
+                onClick={() => {
+                  Tawk_API.toggle();
+                }}
+                className="flex text-nowrap w-32 justify-center shadow-sm border border-gray-300 gap-x-1 items-center bg-white text-black font-medium rounded-md text-sm px-5 py-2.5"><IoChatbubbleSharp className='text-blue-500' size={22} /> Chat Now</button>
+
+              <a
+                href="mailto:support@Studywello.com"
+                target="_blank"
+                className="flex text-nowrap w-32 justify-center shadow-sm border border-gray-300 gap-x-1 items-center bg-white text-black font-medium rounded-md text-sm px-5 py-2.5"><MdEmail className='text-red-500' size={22} /> Email Us</a>
+            </div>
           </div>
 
-          {/* EMAIL FORM */}
+          {/* IMAGE */}
           <div className="lg:max-w-lg lg:w-1/2 w-full px-2 mt-10 lg:mt-0">
-            <EmailForm />
+            <img className="object-cover object-center rounded px-3 md:px-10"
+              alt="hero"
+              src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Ellipse_64_1.png?v=1716290653"
+            />
           </div>
         </div>
       </section>
-
-
-
-
 
       {/* --------------- TRUST SECTION ---------------  */}
       <TrustSec />
@@ -251,6 +290,9 @@ const OnlineClasses = () => {
       {/* --------------- SUBJECT DETAILS ---------------  */}
       <Subject />
 
+      {/* --------------- CONTENT SEO ---------------  */}
+      <SeoContentBlock />
+
       {/* --------------- FAQ'S ---------------  */}
       <Faq />
 
@@ -260,4 +302,5 @@ const OnlineClasses = () => {
   );
 };
 
-export default OnlineClasses;
+export default DoMyClass;
+
