@@ -18,12 +18,12 @@ const TrustSec = () => {
                     {/* BOX 3 */}
                     <div className="box flex items-center gap-2">
                         <span className='w-10'><img className='w-full p-1' src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/100-percent_1_2.png?v=1713438051" alt="" /></span>
-                        <span className='text-white font-medium text-lg xxl:text-xl'>Plagiarism Free Work</span>
+                        <span className='text-white font-medium text-lg xxl:text-xl text-nowrap'>5000+ Classes with A/B</span>
                     </div>
                     {/* BOX 4 */}
                     <div className="box flex items-center gap-2">
                         <span className='w-10'><img className='w-full p-1' src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/100-percent_1_3.png?v=1713438051" alt="" /></span>
-                        <span className='text-white font-medium text-lg xxl:text-xl'>Money Back Guarantee</span>
+                        <span className='text-white font-medium text-lg xxl:text-xl'>9.5/10 feedback rating</span>
                     </div>
                 </div>
             </section>
