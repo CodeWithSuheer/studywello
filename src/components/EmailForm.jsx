@@ -8,6 +8,8 @@ import { MdEmail } from "react-icons/md";
 
 
 const EmailForm = () => {
+    const [loading, setLoading] = useState(false);
+
     const [formdata, setFormdata] = useState({
         name: "",
         phone: "",
@@ -26,6 +28,7 @@ const EmailForm = () => {
             return;
         }
 
+        setLoading(true)
         try {
             await emailjs.send(
                 'service_6xm8ezx',
@@ -38,25 +41,37 @@ const EmailForm = () => {
                     publicKey: '71BqWuSx0QJ07BuCf',
                 },
             );
+
+            reset();
+            setLoading(false)
+            toast.success("Query sent! We'll reach out shortly.");
             console.log('SUCCESS!');
+
         } catch (err) {
             if (err instanceof EmailJSResponseStatus) {
                 console.log('EMAILJS FAILED...', err);
                 return;
             }
-
+            setLoading(false)
             console.log('ERROR', err);
         }
     };
+
+    const reset = () => {
+        setFormdata({
+            name: "",
+            phone: "",
+        });
+    }
 
     return (
         <>
             <div className="w-full px-3 sm:px-6 py-6 sm:py-10 text-center bg-[#F2EFFF] text-black rounded-xl shadow-xl">
                 <h2 className="mb-4 text-black text-2xl font-semibold">Hire someone to take your online class?<span className="text-[#1A73E8]"> Chat Now</span></h2>
 
-                <p className="mb-4 text-sm sm:text-md">Get Top Grades Without the Stress – Hire an Expert for Your Online Classes!</p>
+                <p className="mb-4 text-sm sm:text-md">Get Top Grades Without the Stress - Hire an Expert for Your Online Classes!</p>
 
-                <p className="mb-4 font-medium text-sm sm:text-md">Connect with Us Instantly! Fast Quotes, 24/7 Support, and Trusted Class Help.</p>
+                <p className="mb-4 font-medium text-sm sm:text-md">24/7 Support, and Trusted Class Help.</p>
 
 
                 {/* FIELDS */}
@@ -81,9 +96,10 @@ const EmailForm = () => {
 
                 <button
                     onClick={handleSubmit}
-                    className="flex justify-center gap-x-1 items-center bg-[#1A73E8] text-white font-medium rounded-md w-full text-sm px-5 py-2.5"
+                    disabled={loading}
+                    className={`${loading ? "cursor-not-allowed" : ""} flex justify-center gap-x-1 items-center bg-[#1A73E8] text-white font-medium rounded-md w-full text-sm px-5 py-2.5`}
                 >
-                    Text Me <IoArrowForward />
+                    {loading ? (<>Submitting...</>) : (<>Text Me <IoArrowForward /></>)}
                 </button>
 
                 <span className="my-4 relative flex justify-center">

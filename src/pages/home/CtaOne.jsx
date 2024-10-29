@@ -11,17 +11,17 @@ const cross = (
 )
 
 const studyWelloData = [
-    "98% of our client Scored A/B",
-    "Muliple Payment Method (All Cards, Apple Pay)",
-    "Instant SMS/Call/WhatsApp Support",
-    "100% Refund Guaranted",
+    "98% Client Success Rate",
+    "Multiple Payment Options",
+    "24/7 Support Availability",
+    "100% Refund Guarantee: ",
 ]
 
 const othersData = [
     "No Guaranteed Grade",
-    "Promoting Payment Methods like Cashapp",
-    "Poor Support After You Pay",
-    "No Guaranteed Refunds",
+    "Limited Payment Methods",
+    "Poor Support After Payment is Completed.",
+    "No Refund Policy",
 ]
 
 const CtaOne = ({ text }) => {
@@ -52,12 +52,14 @@ const CtaOne = ({ text }) => {
                         <div className="studywello_perks sm:w-[30rem] ">
                             <div className="comparisonBoxShadow h-[20rem] px-5 sm:px-7 py-6 space-y-6 rounded-xl bg-white border border-gray-200">
                                 <div className="mb-2 text-2xl sm:text-3xl font-semibold text-start bg-gradient-to-tr from-blue-600  to-blue-300 bg-clip-text text-transparent">Studywello</div>
-                                <div className="flex gap-x-2 sm:gap-x-3 justify-start items-center">
-                                    <span className="icon text-green-500">
-                                        {tick}
-                                    </span>
-                                    <p className='text-sm sm:text-lg font-normal'><span className='font-semibold'>98% Client Success Rate:</span> Most of our clients achieve A/B grades, ensuring top-quality results.</p>
-                                </div>
+                                {studyWelloData?.map((data, index) => (
+                                    <div key={index} className="flex gap-x-2 sm:gap-x-3 justify-start items-center">
+                                        <span className="icon text-green-500">
+                                            {tick}
+                                        </span>
+                                        <p className='text-sm sm:text-lg font-normal'>{data}</p>
+                                    </div>
+                                ))}
                             </div>
                         </div>
 

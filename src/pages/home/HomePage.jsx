@@ -10,6 +10,8 @@ import CtaTwo from "./CtaTwo";
 import CtaOne from "./CtaOne";
 import "./Home.css";
 import { Helmet } from "react-helmet";
+import CtaOneV2 from "../../components/CtaOneV2";
+import PhoneNumberForm from "../../components/PhoneNumberForm";
 
 const HomePage = () => {
   return (
@@ -36,8 +38,18 @@ const HomePage = () => {
                   meet your need
                 </p>
 
-                <div className="button mt-7">
-                  <Button />
+                <h2 className="mb-3 sm:mb-3 text-2xl sm:text-3xl font-bold tracking-wide w-full lg:max-w-sm md:text-3xl">
+                  Get a quote in 1 Minutes
+                </h2>
+
+                <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
+                  Get a text Back in 1 Minutes!
+                </p>
+
+                <div className="mb-3 button w-full">
+                  <div className="max-w-sm">
+                    <PhoneNumberForm />
+                  </div>
                 </div>
               </div>
 
@@ -121,6 +133,8 @@ const HomePage = () => {
 
       {/* --------------- CTA SECTION ---------------  */}
       <CtaOne text="Take my class" />
+
+      <CtaOneV2 />
 
       {/* --------------- PROCESS WE FOLLOW ---------------  */}
       <Process />

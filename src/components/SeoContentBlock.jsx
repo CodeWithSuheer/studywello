@@ -4,46 +4,24 @@ const tick = (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5" /></svg>
 )
 
-const firstTableData = [
-    "Pay someone to do my online class for me",
-    "Every 3rd client in the USA refer us for online class help to peers",
-    "Why taking online classes is beneficial for students in the US?",
-    "Who should consider taking online class help?",
-    "How TakemyOnlineClassesForme can help in doing your online class for you?",
-    "Why should pay someone to take an online class for you?",
-    "What are the benefits of hiring online class helpers on our website?",
-    "We are comfortable with Major Learning management systems - Find out what we offer",
-]
-
-
 const SeoContentBlock = () => {
     return (
         <>
             <section className="bg-white px-4 md:px-0">
-                <div className="max-w-6xl mx-auto py-10">``
-                    {/* <div className="first_block">
-                        <h2 className='mb-7 text-center text-3xl sm:text-4xl font-semibold'>Pay Someone To Take My Online Class</h2>
-                        <div className="content border border-gray-400 bg-gray-50 rounded-lg px-4 py-5 text-black space-y-2">
-                            {firstTableData?.map((data) => (
-                                <div className="row flex justisfy-start items-center gap-x-2"><span className='text-green-600'>{tick}</span> {data}</div>
-                            ))}
-                        </div>
-                    </div> */}
-
-                    {/* SECOND SECTION */}
-                    <div className="secondSection mt-10">
+                <div className="max-w-6xl mx-auto py-10">
+                    <div className="border border-blue-400 bg-blue-100 rounded-lg px-6 py-7 text-gray-700 mt-4">
                         <h2 className='mb-3 text-start text-2xl sm:text-2xl font-semibold'>Pay Someone to Take My Online Class for Me</h2>
 
                         <p className='text-md'>
-                            Struggling to keep up with your online classes? Look no further. With Studywello, you’re one step away from hassle-free academic success. We understand the commitment and investment you’ve made in your education, and we’re here to ensure that every assignment, quiz, and class is handled with excellence. Whether it's an entire course or a single exam, we’ve got you covered.
+                            Struggling to keep up with your online classes? Look no further. With Studywello, you're one step away from hassle-free academic success. We understand the commitment and investment you've made in your education, and we're here to ensure that every assignment, quiz, and class is handled with excellence. Whether it's an entire course or a single exam, we've got you covered.
                         </p>
                     </div>
 
-                    <div className="secondSection mt-10">
+                    <div className="border border-blue-400 bg-blue-100 rounded-lg px-6 py-7 text-gray-700 mt-4">
                         <h2 className='mb-3 text-start text-2xl sm:text-2xl font-semibold'>Why Choose Studywello? Trusted by Thousands in the USA</h2>
 
                         <p className='text-md'>
-                            Our reputation speaks for itself. We’re the go-to choice for online class help, trusted by countless students across the country. Here's why clients continue to refer us to their peers:
+                            Our reputation speaks for itself. We're the go-to choice for online class help, trusted by countless students across the country. Here's why clients continue to refer us to their peers:
                         </p>
 
                         <ul className='pl-5'>
@@ -61,13 +39,11 @@ const SeoContentBlock = () => {
                         </ul>
                     </div>
 
-
-
-                    <div className="secondSection mt-10">
+                    <div className="border border-blue-400 bg-blue-100 rounded-lg px-6 py-7 text-gray-700 mt-4">
                         <h2 className='mb-3 text-start text-2xl sm:text-2xl font-semibold'>Why Taking Online Classes is Beneficial for Students in the USA</h2>
 
                         <p className='text-md'>
-                            Online classes are a game-changer, especially for students and working professionals. Here’s why more people are choosing this flexible education model:
+                            Online classes are a game-changer, especially for students and working professionals. Here's why more people are choosing this flexible education model:
                         </p>
 
                         <ul className='pl-5'>
@@ -85,15 +61,13 @@ const SeoContentBlock = () => {
                         </ul>
                     </div>
 
-
-
-                    <div className="secondSection mt-10">
+                    <div className="border border-blue-400 bg-blue-100 rounded-lg px-6 py-7 text-gray-700 mt-4">
                         <h2 className='mb-3 text-start text-2xl sm:text-2xl font-semibold'>
                             Who Should Consider Online Class Help?
                         </h2>
 
                         <p className='text-md'>
-                            Whether you’re a working professional, a full-time student, or balancing other life commitments, online class help could be the solution you need. Here are some situations where our clients benefit most:
+                            Whether you're a working professional, a full-time student, or balancing other life commitments, online class help could be the solution you need. Here are some situations where our clients benefit most:
                         </p>
 
                         <ul className='pl-5'>
@@ -111,8 +85,7 @@ const SeoContentBlock = () => {
                         </ul>
                     </div>
 
-
-                    <div className="secondSection mt-10">
+                    <div className="border border-blue-400 bg-blue-100 rounded-lg px-6 py-7 text-gray-700 mt-4">
                         <h2 className='mb-3 text-start text-2xl sm:text-2xl font-semibold'>
                             How Studywello Helps You Succeed
                         </h2>
@@ -126,7 +99,7 @@ const SeoContentBlock = () => {
                                 <span className='font-semibold'>Expert Matching:</span> Connect with a qualified professional in your subject area.
                             </li>
                             <li className='list-disc my-3'>
-                                <span className='font-semibold'>Flexible Scheduling and Private Support: </span> Receive weekly updates so you’re always in the loop.
+                                <span className='font-semibold'>Flexible Scheduling and Private Support: </span> Receive weekly updates so you're always in the loop.
                             </li>
 
                             <li className='list-disc my-3'>
@@ -136,14 +109,13 @@ const SeoContentBlock = () => {
                         </ul>
                     </div>
 
-
-                    <div className="secondSection mt-10">
+                    <div className="border border-blue-400 bg-blue-100 rounded-lg px-6 py-7 text-gray-700 mt-4">
                         <h2 className='mb-3 text-start text-2xl sm:text-2xl font-semibold'>
                             Why Pay Someone to Take an Online Class?
                         </h2>
 
                         <p className='text-md'>
-                            Academic life can be overwhelming. Paying a professional to handle your online class gives you the freedom to focus on what truly matters. Here’s why it’s a smart choice:
+                            Academic life can be overwhelming. Paying a professional to handle your online class gives you the freedom to focus on what truly matters. Here's why it's a smart choice:
                         </p>
 
                         <ul className='pl-5'>
@@ -161,8 +133,7 @@ const SeoContentBlock = () => {
                         </ul>
                     </div>
 
-
-                    <div className="secondSection mt-10">
+                    <div className="border border-blue-400 bg-blue-100 rounded-lg px-6 py-7 text-gray-700 mt-4">
                         <h2 className='mb-3 text-start text-2xl sm:text-2xl font-semibold'>
                             Benefits of Choosing Studywello for Online Class Help
                         </h2>
@@ -180,19 +151,19 @@ const SeoContentBlock = () => {
                             </li>
 
                             <li className='list-disc my-3'>
-                                <span className='font-semibold'>Dedicated Experts in Every Field: </span> Law, business, engineering, nursing—you name it, we’ve got it.
+                                <span className='font-semibold'>Dedicated Experts in Every Field: </span> Law, business, engineering, nursing—you name it, we've got it.
                             </li>
 
                         </ul>
                     </div>
 
-                    <div className="secondSection mt-10">
+                    <div className="border border-blue-400 bg-blue-100 rounded-lg px-6 py-7 text-gray-700 mt-4">
                         <h2 className='mb-3 text-start text-2xl sm:text-2xl font-semibold'>
                             Our Expertise Across Major Learning Management Systems
                         </h2>
 
                         <p className='text-md'>
-                            We’re familiar with all major Learning Management Systems (LMS), ensuring a smooth experience no matter where you study:
+                            We're familiar with all major Learning Management Systems (LMS), ensuring a smooth experience no matter where you study:
                         </p>
 
                         <ul className='pl-5'>
@@ -204,25 +175,11 @@ const SeoContentBlock = () => {
                             </li>
 
                             <li className='list-disc my-3'>
-                                <span className='font-semibold'>Moodle:</span> We’re on top of every update to ensure seamless support.
+                                <span className='font-semibold'>Moodle:</span> We're on top of every update to ensure seamless support.
 
                             </li>
                         </ul>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 </div>
             </section>

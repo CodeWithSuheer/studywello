@@ -22,6 +22,7 @@ import { MdEmail } from "react-icons/md";
 
 import { FaPhone } from "react-icons/fa6";
 import SeoContentBlock from "../../components/SeoContentBlock";
+import PhoneNumberForm from "../../components/PhoneNumberForm";
 
 
 const DoMyClass = () => {
@@ -61,33 +62,16 @@ const DoMyClass = () => {
             </p>
 
             <h2 className="mb-3 sm:mb-3 text-2xl sm:text-3xl font-bold tracking-wide w-full lg:max-w-sm md:text-3xl">
-              Get a quote in 5 Minutes
+              Get a quote in 1 Minutes
             </h2>
 
             <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
-              Get a text Back in 5 Minutes!
+              Get a text Back in 1 Minutes!
             </p>
 
             <div className="mb-3 button w-full">
               <div className="max-w-sm">
-                <div className="relative">
-                  <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                    <FaPhone className='text-blue-600' size={20} />
-                  </div>
-                  <input
-                    type="search"
-                    id="default-search"
-                    className="block w-full p-3 ps-10 text-md text-gray-900 border focus:border-transparent border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Phone Number*"
-                    required=""
-                  />
-                  <button
-                    type="submit"
-                    className="text-white absolute end-2.5 bottom-1.5 bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-4 py-2"
-                  >
-                    Text Me
-                  </button>
-                </div>
+                <PhoneNumberForm />
               </div>
             </div>
 
