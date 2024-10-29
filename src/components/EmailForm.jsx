@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import toast from 'react-hot-toast';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { IoArrowForward } from "react-icons/io5";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { IoChatbubbleSharp } from "react-icons/io5";
@@ -13,8 +14,8 @@ const EmailForm = () => {
     });
 
 
-    const handleSubmit = () => {
-        console.log('formdata', formdata);
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
         if (!formdata.name) {
             toast.error('Please enter your name');
@@ -25,20 +26,37 @@ const EmailForm = () => {
             return;
         }
 
-        toast.success('Message sent successfully!');
-        setFormdata({ name: "", phone: "" });
-    }
+        try {
+            await emailjs.send(
+                'service_6xm8ezx',
+                'template_yj3mw4n',
+                {
+                    name: formdata.name,
+                    phone: formdata.phone,
+                },
+                {
+                    publicKey: '71BqWuSx0QJ07BuCf',
+                },
+            );
+            console.log('SUCCESS!');
+        } catch (err) {
+            if (err instanceof EmailJSResponseStatus) {
+                console.log('EMAILJS FAILED...', err);
+                return;
+            }
 
-
+            console.log('ERROR', err);
+        }
+    };
 
     return (
         <>
             <div className="w-full px-3 sm:px-6 py-6 sm:py-10 text-center bg-[#F2EFFF] text-black rounded-xl shadow-xl">
                 <h2 className="mb-4 text-black text-2xl font-semibold">Hire someone to take your online class?<span className="text-[#1A73E8]"> Chat Now</span></h2>
 
-                <p className="mb-4 text-sm sm:text-md">Get A Quote with our text services instantly.</p>
+                <p className="mb-4 text-sm sm:text-md">Get Top Grades Without the Stress – Hire an Expert for Your Online Classes!</p>
 
-                <p className="mb-4 font-medium text-sm sm:text-md">Connect with us anytime, 24*7 support.</p>
+                <p className="mb-4 font-medium text-sm sm:text-md">Connect with Us Instantly! Fast Quotes, 24/7 Support, and Trusted Class Help.</p>
 
 
                 {/* FIELDS */}
@@ -61,7 +79,12 @@ const EmailForm = () => {
                     </div>
                 </div>
 
-                <button onClick={handleSubmit} className="flex justify-center gap-x-1 items-center bg-[#1A73E8] text-white font-medium rounded-md w-full text-sm px-5 py-2.5">Text Me <IoArrowForward /></button>
+                <button
+                    onClick={handleSubmit}
+                    className="flex justify-center gap-x-1 items-center bg-[#1A73E8] text-white font-medium rounded-md w-full text-sm px-5 py-2.5"
+                >
+                    Text Me <IoArrowForward />
+                </button>
 
                 <span className="my-4 relative flex justify-center">
                     <div

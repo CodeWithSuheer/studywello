@@ -51,15 +51,13 @@ const CtaOne = ({ text }) => {
                     <div className="relative mt-10 content flex justify-center items-center gap-x-10 gap-y-10 flex-col md:flex-row flex-wrap">
                         <div className="studywello_perks sm:w-[30rem] ">
                             <div className="comparisonBoxShadow h-[20rem] px-5 sm:px-7 py-6 space-y-6 rounded-xl bg-white border border-gray-200">
-                            <div className="mb-2 text-2xl sm:text-3xl font-semibold text-start bg-gradient-to-tr from-blue-600  to-blue-300 bg-clip-text text-transparent">Studywello</div>
-                                {studyWelloData?.map((data, index) => (
-                                    <div key={index} className="flex gap-x-2 sm:gap-x-3 justify-start items-center">
-                                        <span className="icon text-green-500">
-                                            {tick}
-                                        </span>
-                                        <p className='text-sm sm:text-lg font-normal'>{data}</p>
-                                    </div>
-                                ))}
+                                <div className="mb-2 text-2xl sm:text-3xl font-semibold text-start bg-gradient-to-tr from-blue-600  to-blue-300 bg-clip-text text-transparent">Studywello</div>
+                                <div className="flex gap-x-2 sm:gap-x-3 justify-start items-center">
+                                    <span className="icon text-green-500">
+                                        {tick}
+                                    </span>
+                                    <p className='text-sm sm:text-lg font-normal'><span className='font-semibold'>98% Client Success Rate:</span> Most of our clients achieve A/B grades, ensuring top-quality results.</p>
+                                </div>
                             </div>
                         </div>
 
@@ -69,7 +67,7 @@ const CtaOne = ({ text }) => {
 
                         <div className="other sm:w-[30rem] ">
                             <div className="comparisonBoxShadow h-[20rem] px-5 sm:px-7 py-6 space-y-6 rounded-xl bg-white border border-gray-200">
-                            <div className="mb-2 text-2xl sm:text-3xl font-semibold text-start bg-gradient-to-tr from-red-600  to-yellow-400 bg-clip-text text-transparent  ">Others</div>
+                                <div className="mb-2 text-2xl sm:text-3xl font-semibold text-start bg-gradient-to-tr from-red-600  to-yellow-400 bg-clip-text text-transparent  ">Others</div>
                                 {othersData?.map((data, index) => (
                                     <div key={index} className="flex gap-x-2 sm:gap-x-3 justify-start items-center">
                                         <span className="icon text-red-500">
