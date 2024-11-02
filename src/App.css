@@ -61,3 +61,9 @@ body::-webkit-scrollbar-thumb {
 .comparisonBoxShadow {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.custom_shadow {
+  -webkit-box-shadow: 0px 13px 61px 3px rgba(212, 118, 93, 0.75);
+  -moz-box-shadow: 0px 13px 61px 3px rgba(212, 118, 93, 0.75);
+  box-shadow: 0px 13px 61px 3px rgba(212, 118, 93, 0.75);
+}

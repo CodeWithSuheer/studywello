@@ -15,6 +15,7 @@ import "../home/Home.css";
 import CtaOneV2 from "../../components/CtaOneV2";
 import EmailForm from "../../components/EmailForm";
 import ExpertsAvailable from "../../components/ExpertsAvailable";
+import Comparison from "../../components/Comparison";
 
 
 const OnlineClasses = () => {
@@ -41,39 +42,41 @@ const OnlineClasses = () => {
       </Helmet>
 
       {/* --------------- HERO SECTION ---------------  */}
-      <section className="text-white banner_backgroundImage mb-0 lg:mb-0 min-h-[85vh]">
-        <div className="max-w-7xl mx-auto flex md:px-10 pt-28 pb-10 lg:flex-row flex-col items-center">
-          {/* CONTENT */}
-          <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
-            <h2 className="mb-3 sm:mb-4 text-2xl sm:text-3xl font-semibold tracking-wide w-full lg:max-w-sm md:text-3xl lg:text-4xl">
-              Pay Someone To Do My Class to Boost my Grades
-            </h2>
-            <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
-              Struggling to keep up with your online classes? Don't worry,
-              Studywello is here to help! Our experienced tutors and academic
-              experts can provide you with the support you need to succeed in
-              your coursework.
-            </p>
+      <section className="text-white banner_backgroundImage mb-0 lg:mb-0 ">
+        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[90vh]">
+          <div className="flex flex-col sm:flex-row justify-center items-center">
+            {/* CONTENT */}
+            <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
+              <h2 className="mb-3 sm:mb-4 text-2xl sm:text-3xl font-semibold tracking-wide w-full lg:max-w-sm md:text-3xl lg:text-4xl">
+                Pay Someone To Do My Class to Boost my Grades
+              </h2>
+              <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
+                Struggling to keep up with your online classes? Don't worry,
+                Studywello is here to help! Our experienced tutors and academic
+                experts can provide you with the support you need to succeed in
+                your coursework.
+              </p>
 
-            <div className="button mt-4 flex justify-start items-center gap-x-7">
-              <div className="text-center bg-gradient-to-tl from-blue-500 via-purple-500 to-pink-500 rounded-lg text-white px-5 py-3">
-                <h2 className="mb-1 text-3xl font-semibold">8200+</h2>
-                <p className="text-sm">Classes With A/B</p>
+              <div className="button mt-4 flex justify-start items-center gap-x-7">
+                <div className="text-center bg-gradient-to-tl from-blue-500 via-purple-500 to-pink-500 rounded-lg text-white px-5 py-3">
+                  <h2 className="mb-1 text-3xl font-semibold">8200+</h2>
+                  <p className="text-sm">Classes With A/B</p>
+                </div>
+
+
+                <div className="text-center bg-gradient-to-tl from-blue-500 via-purple-500 to-pink-500 rounded-lg text-white px-5 py-3">
+                  <h2 className="mb-1 text-3xl font-semibold">9.8/10</h2>
+                  <p className="text-sm">Feedback rating</p>
+                </div>
               </div>
 
-
-              <div className="text-center bg-gradient-to-tl from-blue-500 via-purple-500 to-pink-500 rounded-lg text-white px-5 py-3">
-                <h2 className="mb-1 text-3xl font-semibold">9.8/10</h2>
-                <p className="text-sm">Feedback rating</p>
-              </div>
+              <ExpertsAvailable />
             </div>
 
-            <ExpertsAvailable />
-          </div>
-
-          {/* EMAIL FORM */}
-          <div className="lg:max-w-lg lg:w-1/2 w-full px-2 mt-10 lg:mt-0">
-            <EmailForm />
+            {/* EMAIL FORM */}
+            <div className="lg:max-w-lg lg:w-1/2 w-full px-2 mt-10 lg:mt-0">
+              <EmailForm />
+            </div>
           </div>
         </div>
       </section>
@@ -122,10 +125,11 @@ const OnlineClasses = () => {
       {/* --------------- WHY CHOOSE US ---------------  */}
       <WhyChooseUs />
 
-      {/* --------------- CTA SECTION ---------------  */}
-      <CtaOne text="Take my class" />
-
+      {/* --------------- CTAV2 ---------------  */}
       <CtaOneV2 />
+
+      {/* --------------- COMPARISON ---------------  */}
+      <Comparison />
 
       {/* --------------- PROOF ---------------  */}
       <section className="bg-white">
@@ -152,6 +156,9 @@ const OnlineClasses = () => {
           </div>
         </div>
       </section>
+
+      {/* --------------- CTA SECTION ---------------  */}
+      <CtaOne text="Take my class" />
 
       {/* --------------- PROCESS WE FOLLOW ---------------  */}
       <Process />

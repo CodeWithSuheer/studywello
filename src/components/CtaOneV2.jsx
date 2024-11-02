@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaPhone } from "react-icons/fa6";
 import PhoneNumberForm from './PhoneNumberForm';
+import Button from './Button';
 
 const CtaOneV2 = () => {
   return (
@@ -17,12 +18,15 @@ const CtaOneV2 = () => {
               <p className="mb-6 max-w-md text-gray-700 leading-relaxed text-lg">Hiring us to take your online class for you is a small investment for good grades</p>
 
               <div className="button">
-                <div className="max-w-md">
+                {/* <div className="max-w-md">
                   <PhoneNumberForm />
+                </div> */}
+                <div className="flex justify-start">
+                  <Button text="Do my class" />
                 </div>
               </div>
 
-              <p className="mt-3 max-w-md text-gray-700 leading-relaxed text-xs">We need your number to provide our services as it is the fastest form of communication. We do not spam.</p>
+              {/* <p className="mt-3 max-w-md text-gray-700 leading-relaxed text-xs">We need your number to provide our services as it is the fastest form of communication. We do not spam.</p> */}
 
             </div>
 

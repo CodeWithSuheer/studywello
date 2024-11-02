@@ -1,10 +1,11 @@
 import React from 'react'
 
+
 const TrustSec = () => {
     return (
         <>
             <section className="mb-16 relative flex items-center justify-center">
-                <div className='absolute -top-12  max-w-6xl mx-auto rounded-full bg-blue-400 px-5 sm:px-10 py-7 mb-5'>
+                <div className='custom_shadow absolute -top-12  max-w-6xl mx-auto rounded-full bg-orange-400 px-5 sm:px-10 py-7 mb-5'>
                     <div className="max-w-5xl mx-auto grid sm:place-items-center grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4">
                         {/* BOX 1 */}
                         <div className="box flex items-center gap-2">

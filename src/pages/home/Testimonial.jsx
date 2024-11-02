@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
+// images
 const logo = "https://assets.dryicons.com/uploads/icon/svg/2364/male_user.svg";
 const femalelogo = "https://assets.dryicons.com/uploads/icon/svg/2433/female_user.svg";
 
@@ -226,7 +228,7 @@ const Testimonial = () => {
 
                   <div>
                     <div className="flex justify-center gap-0.5 text-green-500">
-                      
+
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5"
@@ -563,7 +565,7 @@ const Testimonial = () => {
 
                   <div>
                     <div className="flex justify-center gap-0.5 text-green-500">
-                      
+
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5"

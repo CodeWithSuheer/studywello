@@ -49,58 +49,60 @@ const DoMyClass = () => {
       </Helmet>
 
       {/* --------------- HERO SECTION ---------------  */}
-      <section className="text-white banner_backgroundImage mb-0 lg:mb-0 min-h-[85vh]">
-        <div className="max-w-7xl mx-auto flex md:px-10 pt-28 pb-10 lg:flex-row flex-col items-center">
-          {/* CONTENT */}
-          <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
+      <section className="text-white banner_backgroundImage mb-0 lg:mb-0 ">
+        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[90vh]">
+          <div className="flex flex-col sm:flex-row justify-center items-center">
+            {/* CONTENT */}
+            <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
 
-            <h2 className="mb-3 sm:mb-3 text-2xl sm:text-3xl font-semibold tracking-wide w-full lg:max-w-xl md:text-3xl lg:text-4xl">
-              Struggling To Keep Up With Your Online Classes?
-            </h2>
-            <p className="mb-3 sm:mb-4 text-md sm:text-lg w-full sm:max-w-lg font-normal">
-              Pay us to handle your coursework, assignments, and discussions. Ace your classes stress-free with our online class help services.
-            </p>
+              <h2 className="mb-3 sm:mb-3 text-2xl sm:text-3xl font-semibold tracking-wide w-full lg:max-w-xl md:text-3xl lg:text-4xl">
+                Struggling To Keep Up With Your Online Classes?
+              </h2>
+              <p className="mb-3 sm:mb-4 text-md sm:text-lg w-full sm:max-w-lg font-normal">
+                Pay us to handle your coursework, assignments, and discussions. Ace your classes stress-free with our online class help services.
+              </p>
 
-            <h2 className="mb-3 sm:mb-3 text-2xl sm:text-3xl font-bold tracking-wide w-full lg:max-w-sm md:text-3xl">
-              Get a quote in 1 Minutes
-            </h2>
+              <h2 className="mb-3 sm:mb-3 text-2xl sm:text-3xl font-bold tracking-wide w-full lg:max-w-sm md:text-3xl">
+                Get a quote in 1 Minutes
+              </h2>
 
-            <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
-              Get a text Back in 1 Minutes!
-            </p>
+              <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
+                Get a text Back in 1 Minutes!
+              </p>
 
-            <div className="mb-3 button w-full">
-              <div className="max-w-sm">
-                <PhoneNumberForm />
+              <div className="mb-3 button w-full">
+                <div className="max-w-sm">
+                  <PhoneNumberForm />
+                </div>
+              </div>
+
+              <div className="buttons flex justify-center items-center flex-wrap gap-2">
+                <a
+                  href="https://api.whatsapp.com/send?phone=17163749747"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex text-nowrap w-32 justify-center shadow-sm border border-gray-300 gap-x-1 items-center bg-white text-black font-medium rounded-md text-sm px-5 py-2.5"><IoLogoWhatsapp className='text-green-500' size={22} /> Whatsapp</a>
+
+                <button
+                  onClick={() => {
+                    Tawk_API.toggle();
+                  }}
+                  className="flex text-nowrap w-32 justify-center shadow-sm border border-gray-300 gap-x-1 items-center bg-white text-black font-medium rounded-md text-sm px-5 py-2.5"><IoChatbubbleSharp className='text-blue-500' size={22} /> Chat Now</button>
+
+                <a
+                  href="mailto:support@Studywello.com"
+                  target="_blank"
+                  className="flex text-nowrap w-32 justify-center shadow-sm border border-gray-300 gap-x-1 items-center bg-white text-black font-medium rounded-md text-sm px-5 py-2.5"><MdEmail className='text-red-500' size={22} /> Email Us</a>
               </div>
             </div>
 
-            <div className="buttons flex justify-center items-center flex-wrap gap-2">
-              <a
-                href="https://api.whatsapp.com/send?phone=17163749747"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex text-nowrap w-32 justify-center shadow-sm border border-gray-300 gap-x-1 items-center bg-white text-black font-medium rounded-md text-sm px-5 py-2.5"><IoLogoWhatsapp className='text-green-500' size={22} /> Whatsapp</a>
-
-              <button
-                onClick={() => {
-                  Tawk_API.toggle();
-                }}
-                className="flex text-nowrap w-32 justify-center shadow-sm border border-gray-300 gap-x-1 items-center bg-white text-black font-medium rounded-md text-sm px-5 py-2.5"><IoChatbubbleSharp className='text-blue-500' size={22} /> Chat Now</button>
-
-              <a
-                href="mailto:support@Studywello.com"
-                target="_blank"
-                className="flex text-nowrap w-32 justify-center shadow-sm border border-gray-300 gap-x-1 items-center bg-white text-black font-medium rounded-md text-sm px-5 py-2.5"><MdEmail className='text-red-500' size={22} /> Email Us</a>
+            {/* IMAGE */}
+            <div className="lg:max-w-lg lg:w-1/2 w-full px-2 mt-10 lg:mt-0">
+              <img className="object-cover object-center rounded px-3 md:px-10"
+                alt="hero"
+                src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Ellipse_64_1.png?v=1716290653"
+              />
             </div>
-          </div>
-
-          {/* IMAGE */}
-          <div className="lg:max-w-lg lg:w-1/2 w-full px-2 mt-10 lg:mt-0">
-            <img className="object-cover object-center rounded px-3 md:px-10"
-              alt="hero"
-              src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Ellipse_64_1.png?v=1716290653"
-            />
           </div>
         </div>
       </section>

@@ -103,7 +103,7 @@ const Footer = () => {
 
                                 {/* SOCIAL LINKS */}
                                 <div className="links pt-2 flex items-center justify-start gap-2.5">
-                                    <a href="#" className=""><FaFacebookF className="text-white bg-blue-600 h-7 w-7 p-1.5 rounded-full" /></a>
+                                    <a href="https://www.facebook.com/studywello" target="_blank" className=""><FaFacebookF className="text-white bg-blue-600 h-7 w-7 p-1.5 rounded-full" /></a>
                                     <a href="#" className=""><FaInstagram className="text-white bg-blue-600 h-7 w-7 p-1.5 rounded-full" /></a>
                                     <a href="#" className=""><FaLinkedinIn className="text-white bg-blue-600 h-7 w-7 p-1.5 rounded-full" /></a>
                                     <a href="#" className=""><FaTiktok className="text-white bg-blue-600 h-7 w-7 p-1.5 rounded-full" /></a>

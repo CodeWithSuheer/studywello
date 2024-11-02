@@ -31,14 +31,14 @@ const EmailForm = () => {
         setLoading(true)
         try {
             await emailjs.send(
-                'service_6xm8ezx',
-                'template_yj3mw4n',
+                'service_oj7o6s8',
+                'template_rono4pa',
                 {
                     name: formdata.name,
                     phone: formdata.phone,
                 },
                 {
-                    publicKey: '71BqWuSx0QJ07BuCf',
+                    publicKey: 'AMubOSywU-D9bjMSb',
                 },
             );
 
@@ -69,7 +69,7 @@ const EmailForm = () => {
             <div className="w-full px-3 sm:px-6 py-6 sm:py-10 text-center bg-[#F2EFFF] text-black rounded-xl shadow-xl">
                 <h2 className="mb-4 text-black text-2xl font-semibold">Hire someone to take your online class?<span className="text-[#1A73E8]"> Chat Now</span></h2>
 
-                <p className="mb-4 text-sm sm:text-md">Get Top Grades Without the Stress - Hire an Expert for Your Online Classes!</p>
+                <p className="mb-4 text-sm sm:text-md max-w-sm mx-auto">Get Top Grades Without the Stress - Hire an Expert for Your Online Classes!</p>
 
                 <p className="mb-4 font-medium text-sm sm:text-md">24/7 Support, and Trusted Class Help.</p>
 
