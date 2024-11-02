@@ -23,6 +23,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import SeoContentBlock from "../../components/SeoContentBlock";
 import PhoneNumberForm from "../../components/PhoneNumberForm";
+import Comparison from "../../components/Comparison";
 
 
 const DoMyClass = () => {
@@ -148,9 +149,12 @@ const DoMyClass = () => {
       <WhyChooseUs />
 
       {/* --------------- CTA SECTION ---------------  */}
-      <CtaOne text="Take my class" />
-
       <CtaOneV2 />
+
+      <Comparison />
+
+
+      <CtaOne text="Take my class" />
 
       {/* --------------- PROOF ---------------  */}
       <section className="bg-white">

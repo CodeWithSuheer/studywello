@@ -12,6 +12,7 @@ import "./Home.css";
 import { Helmet } from "react-helmet";
 import CtaOneV2 from "../../components/CtaOneV2";
 import PhoneNumberForm from "../../components/PhoneNumberForm";
+import Comparison from "../../components/Comparison";
 
 const HomePage = () => {
   return (
@@ -132,9 +133,11 @@ const HomePage = () => {
       <Services />
 
       {/* --------------- CTA SECTION ---------------  */}
-      <CtaOne text="Take my class" />
-
       <CtaOneV2 />
+
+      <Comparison />
+
+      <CtaOne text="Take my class" />
 
       {/* --------------- PROCESS WE FOLLOW ---------------  */}
       <Process />

@@ -36,38 +36,40 @@ const Exams = () => {
       </Helmet>
 
       {/* --------------- HERO SECTION ---------------  */}
-      <section className="text-white banner_backgroundImage mb-0 lg:mb-0 min-h-[70vh]">
-        <div className="max-w-7xl mx-auto flex px-4 sm:px-5 md:px-10 pt-24 pb-10 md:flex-row flex-col items-center">
-          {/* CONTENT */}
-          <div className="lg:flex-grow md:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
-            <h2 className="mb-3 sm:mb-4 text-3xl font-semibold tracking-wide w-full lg:max-w-sm md:text-4xl">
-              Hire Someone To Take My Exam For Me to Score High
-            </h2>
-            <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
-              Focus on learning, not stressing. Get the grades you deserve
-              without the hassle. Don't let test anxiety hold you back. Let
-              Studywello help you achieve your academic goals.
-            </p>
+      <section className="text-white banner_backgroundImage mb-0 lg:mb-0 ">
+        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[85vh]">
+          <div className="flex flex-col sm:flex-row justify-center items-center">
+            {/* CONTENT */}
+            <div className="lg:flex-grow md:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
+              <h2 className="mb-3 sm:mb-4 text-3xl font-semibold tracking-wide w-full lg:max-w-sm md:text-4xl">
+                Hire Someone To Take My Exam For Me to Score High
+              </h2>
+              <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
+                Focus on learning, not stressing. Get the grades you deserve
+                without the hassle. Don't let test anxiety hold you back. Let
+                Studywello help you achieve your academic goals.
+              </p>
 
-            <div className="button mt-4">
-              <button
-                onClick={() => {
-                  Tawk_API.toggle();
-                }}
-                className="bg-white text-[#1A73E8] font-medium rounded-3xl px-5 py-2.5 flex items-center gap-2"
-              >
-                <LuMessagesSquare /> Lets Chats <FaArrowRightLong size={14} />
-              </button>
+              <div className="button mt-4">
+                <button
+                  onClick={() => {
+                    Tawk_API.toggle();
+                  }}
+                  className="bg-white text-[#1A73E8] font-medium rounded-3xl px-5 py-2.5 flex items-center gap-2"
+                >
+                  <LuMessagesSquare /> Lets Chats <FaArrowRightLong size={14} />
+                </button>
+              </div>
             </div>
-          </div>
 
-          {/* IMAGE */}
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mt-10 md:mt-0">
-            <img
-              className="object-cover object-center rounded px-3 md:px-10"
-              alt="hero"
-              src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Ellipse_64_1.png?v=1716290653"
-            />
+            {/* IMAGE */}
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mt-10 md:mt-0">
+              <img
+                className="object-cover object-center rounded px-3 md:px-10"
+                alt="hero"
+                src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Ellipse_64_1.png?v=1716290653"
+              />
+            </div>
           </div>
         </div>
       </section>
