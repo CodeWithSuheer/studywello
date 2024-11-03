@@ -39,7 +39,7 @@ const Comparison = () => {
                     </div>
 
                     <div className="relative mt-10 content flex justify-center items-center gap-x-10 gap-y-10 flex-col md:flex-row flex-wrap">
-                        <div className="studywello_perks sm:w-[30rem] ">
+                        <div className="studywello_perks w-full sm:w-[30rem] ">
                             <div className="comparisonBoxShadow h-[20rem] px-5 sm:px-7 py-6 space-y-6 rounded-xl bg-white border border-gray-200">
                                 <div className="mb-2 text-2xl sm:text-3xl font-semibold text-start bg-gradient-to-tr from-blue-600  to-blue-300 bg-clip-text text-transparent">Studywello</div>
                                 {studyWelloData?.map((data, index) => (
@@ -57,7 +57,7 @@ const Comparison = () => {
                             VS
                         </div>
 
-                        <div className="other sm:w-[30rem] ">
+                        <div className="other w-full sm:w-[30rem] ">
                             <div className="comparisonBoxShadow h-[20rem] px-5 sm:px-7 py-6 space-y-6 rounded-xl bg-white border border-gray-200">
                                 <div className="mb-2 text-2xl sm:text-3xl font-semibold text-start bg-gradient-to-tr from-red-600  to-yellow-400 bg-clip-text text-transparent  ">Others</div>
                                 {othersData?.map((data, index) => (
