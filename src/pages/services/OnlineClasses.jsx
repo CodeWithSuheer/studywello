@@ -103,20 +103,14 @@ const OnlineClasses = () => {
           </div>
 
           <div className="lg:flex-grow px-5 md:px-5 md:w-1/2 md:pl-6 lg:pl-14 xl:pl-12 flex flex-col text-left">
-            <h1 className="mb-5 font-bold max-w-md text-3xl md:text-4xl text-[#272727]">
-              50+ Top-Rated And Degreed Writers
+            <h1 className="mb-5 font-bold max-w-lg text-3xl md:text-4xl text-[#272727]">
+              Struggling to Keep Up with Online Classes? Let Our Expert Team Handle It for You!
             </h1>
             <p className="mb-6 leading-relaxed">
-              When it comes to your online classes, don't settle for anything
-              less than the best. Our academic writing assistance is the most
-              trustworthy choice, offering you unparalleled support from a pool
-              of 50+ highly rated and qualified writers. We are committed to
-              delivering high-quality, plagiarism-free content that meets the
-              highest academic standards. Our writers conduct thorough research
-              and ensure that all information is accurate and up-to-date.
+              Managing online coursework can be overwhelming and time-consuming, but you don't have to do it alone. With StudyWello, you gain access to over 50+ top-rated, degreed professionals who are ready to help you succeed. Our team specializes in delivering high-quality, plagiarism-free work tailored to meet strict academic standards. Say goodbye to the stress of looming deadlines and tough assignments, and hello to expert assistance that ensures top grades and peace of mind. We're here to handle your classes with precision and care, so you can focus on what matters most.
             </p>
             <div className="flex justify-start">
-              <Button />
+              <Button text="Get Your Free Quote Now!" />
             </div>
           </div>
         </div>
