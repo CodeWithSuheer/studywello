@@ -42,15 +42,15 @@ const OnlineClasses = () => {
       </Helmet>
 
       {/* --------------- HERO SECTION ---------------  */}
-      <section className="text-white banner_backgroundImage mb-0 lg:mb-0 ">
-        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[90vh]">
-          <div className="flex flex-col sm:flex-row justify-center items-center">
+      <section className="text-white onlineClass_backgroundImage mb-0 lg:mb-0">
+        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[95vh] relative z-10">
+          <div className="flex flex-col lg:flex-row justify-center items-center">
             {/* CONTENT */}
             <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
               <h2 className="mb-3 sm:mb-4 text-2xl sm:text-3xl font-semibold tracking-wide w-full lg:max-w-sm md:text-3xl lg:text-4xl">
                 Pay Someone To Do My Class to Boost my Grades
               </h2>
-              <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg  font-normal">
+              <p className="mb-3 sm:mb-4 text-md sm:text-md w-full sm:max-w-lg font-normal">
                 Struggling to keep up with your online classes? Don't worry,
                 Studywello is here to help! Our experienced tutors and academic
                 experts can provide you with the support you need to succeed in
@@ -62,7 +62,6 @@ const OnlineClasses = () => {
                   <h2 className="mb-1 text-3xl font-semibold">8200+</h2>
                   <p className="text-sm">Classes With A/B</p>
                 </div>
-
 
                 <div className="text-center bg-gradient-to-tl from-blue-500 via-purple-500 to-pink-500 rounded-lg text-white px-5 py-3">
                   <h2 className="mb-1 text-3xl font-semibold">9.8/10</h2>
@@ -80,6 +79,7 @@ const OnlineClasses = () => {
           </div>
         </div>
       </section>
+
 
 
 
