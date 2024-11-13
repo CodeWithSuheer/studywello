@@ -19,6 +19,7 @@ import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 import "./App.css";
 import { Toaster } from "react-hot-toast";
 import DoMyClass from "./pages/services/DoMyClass";
+import ExamsHelp from "./pages/services/ExamsHelp";
 
 function App() {
   const tawkMessengerRef = useRef();
@@ -57,6 +58,7 @@ function App() {
           <Route path="/assignments" element={<Assignments />} />
           <Route path="/online-classes" element={<OnlineClasses />} />
           <Route path="/do-my-class" element={<DoMyClass />} />
+          <Route path="/exams-help" element={<ExamsHelp />} />
         </Routes>
 
         {/* WhatsApp button */}
@@ -69,7 +71,6 @@ function App() {
           <FaWhatsapp size={33} /> <span className="hidden sm:flex">Free Quote On Whatsapp</span>
         </a>
 
-        {/* <Dummy /> */}
         <Footer />
         <Toaster />
       </BrowserRouter>
