@@ -1,29 +1,26 @@
+import { Helmet } from "react-helmet";
+import "../home/Home.css";
 import Faq from "../home/Faq";
 import Process from "../home/Process";
 import LogoGrid from "../home/LogoGrid";
 import Button from "../../components/Button";
 import Testimonial from "../home/Testimonial";
-import { LuMessagesSquare } from "react-icons/lu";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Subject from "../../components/Subject";
 import WhyChooseUs from "../../components/WhyChooseUs";
 import CtaOne from "../home/CtaOne";
 import CtaTwo from "../home/CtaTwo";
 import TrustSec from "../../components/TrustSec";
-import { Helmet } from "react-helmet";
-import "../home/Home.css";
 import CtaOneV2 from "../../components/CtaOneV2";
-import EmailForm from "../../components/EmailForm";
-import NumberField from "../../components/NumberField";
 
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { IoChatbubbleSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
-import { FaPhone } from "react-icons/fa6";
 import SeoContentBlock from "../../components/SeoContentBlock";
 import PhoneNumberForm from "../../components/PhoneNumberForm";
 import Comparison from "../../components/Comparison";
+import EmailFormExamsHelp from "../../components/EmailFormForExamsHelp";
 
 
 const DoMyClass = () => {
@@ -50,9 +47,9 @@ const DoMyClass = () => {
       </Helmet>
 
       {/* --------------- HERO SECTION ---------------  */}
-      <section className="text-white banner_backgroundImage mb-0 lg:mb-0 ">
-        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[90vh]">
-          <div className="flex flex-col sm:flex-row justify-center items-center">
+      <section className="text-white onlineClass_backgroundImage mb-0 lg:mb-0">
+        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[95vh] relative z-10">
+          <div className="flex flex-col lg:flex-row justify-center items-center">
             {/* CONTENT */}
             <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
 
@@ -97,12 +94,9 @@ const DoMyClass = () => {
               </div>
             </div>
 
-            {/* IMAGE */}
+            {/* EMAIL FORM */}
             <div className="lg:max-w-lg lg:w-1/2 w-full px-2 mt-10 lg:mt-0">
-              <img className="object-cover object-center rounded px-3 md:px-10"
-                alt="hero"
-                src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Ellipse_64_1.png?v=1716290653"
-              />
+              <EmailFormExamsHelp />
             </div>
           </div>
         </div>
@@ -114,7 +108,7 @@ const DoMyClass = () => {
       {/* --------------- LOGO GRID ---------------  */}
       <LogoGrid />
 
-      {/* ----------- IMAGE & TEXT SECTION -----------  */}
+      {/* --------------- IMAGE & TEXT SECTION -----------  */}
       <section className="body-font">
         <div className="max-w-6xl mx-auto flex px-1 sm:px-4 py-20 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -133,7 +127,7 @@ const DoMyClass = () => {
               Managing online coursework can be overwhelming and time-consuming, but you don't have to do it alone. With StudyWello, you gain access to over 50+ top-rated, degreed professionals who are ready to help you succeed. Our team specializes in delivering high-quality, plagiarism-free work tailored to meet strict academic standards. Say goodbye to the stress of looming deadlines and tough assignments, and hello to expert assistance that ensures top grades and peace of mind. We're here to handle your classes with precision and care, so you can focus on what matters most.
             </p>
             <div className="flex justify-start">
-              <Button text="Get Your Free Quote Now!"/>
+              <Button text="Get Your Free Quote Now!" />
             </div>
           </div>
         </div>
@@ -145,9 +139,10 @@ const DoMyClass = () => {
       {/* --------------- CTA SECTION ---------------  */}
       <CtaOneV2 />
 
+      {/* --------------- COMPARISON ---------------  */}
       <Comparison />
 
-
+      {/* --------------- CTA ONE ---------------  */}
       <CtaOne text="Take my class" />
 
       {/* --------------- PROOF ---------------  */}
@@ -287,4 +282,3 @@ const DoMyClass = () => {
 };
 
 export default DoMyClass;
-

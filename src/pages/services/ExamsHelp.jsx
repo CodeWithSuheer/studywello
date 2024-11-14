@@ -1,19 +1,12 @@
-import Faq from "../home/Faq";
+import { Helmet } from "react-helmet";
+import "../home/Home.css";
+// 
 import Process from "../home/Process";
 import LogoGrid from "../home/LogoGrid";
 import Button from "../../components/Button";
 import Testimonial from "../home/Testimonial";
-import { LuMessagesSquare } from "react-icons/lu";
-import { FaArrowRightLong } from "react-icons/fa6";
 import Subject from "../../components/Subject";
-import WhyChooseUs from "../../components/WhyChooseUs";
-import CtaOne from "../home/CtaOne";
-import CtaTwo from "../home/CtaTwo";
 import TrustSec from "../../components/TrustSec";
-import { Helmet } from "react-helmet";
-import "../home/Home.css";
-import CtaOneV2 from "../../components/CtaOneV2";
-import ExpertsAvailable from "../../components/ExpertsAvailable";
 import Comparison from "../../components/Comparison";
 import EmailFormExamsHelp from "../../components/EmailFormForExamsHelp";
 import FaqExams from "../home/FaqExams";
@@ -99,7 +92,7 @@ const ExamsHelp = () => {
       {/* --------------- LOGO GRID ---------------  */}
       <LogoGrid />
 
-      {/* ----------- IMAGE & TEXT SECTION -----------  */}
+      {/* --------------- IMAGE & TEXT SECTION -----------  */}
       <section className="body-font">
         <div className="max-w-6xl mx-auto flex px-1 sm:px-4 py-20 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -150,6 +143,10 @@ const ExamsHelp = () => {
               </div>
             ))}
           </div>
+
+          <div className="mt-10 flex justify-center items-center">
+            <Button text="Help Me With Class" />
+          </div>
         </div>
       </section>
 
@@ -160,7 +157,7 @@ const ExamsHelp = () => {
       <Comparison />
 
       {/* --------------- SUBJECT DETAILS ---------------  */}
-      <Subject />
+      <Subject text="Help Me With Class" />
 
       {/* --------------- HELP WITH ALL TYPE ---------------  */}
       <HelpWithAllType />

@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaDotCircle } from "react-icons/fa";
+import Button from './Button';
 
-const Subject = () => {
+const Subject = ({ text = "Let's Talk" }) => {
     const subjectName = [
         "English", "Math", "Statistics", "HRM Class", "Anatomy and Physiology",
         "Accounting", "Computer Science", "History", "Operation Management",
@@ -31,6 +32,10 @@ const Subject = () => {
                                 </button>
                             </div>
                         ))}
+                    </div>
+
+                    <div className="mt-10 flex justify-center items-center">
+                        <Button text={text} />
                     </div>
 
                 </div>

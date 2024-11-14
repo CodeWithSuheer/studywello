@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 
 const tick = (
@@ -70,6 +71,10 @@ const Comparison = () => {
                                 ))}
                             </div>
                         </div>
+                    </div>
+
+                    <div className="mt-10 flex justify-center items-center">
+                        <Button text="Help Me With Class" />
                     </div>
                 </div>
             </section>

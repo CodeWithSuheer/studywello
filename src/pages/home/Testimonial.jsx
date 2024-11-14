@@ -3,8 +3,16 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 // images
-const logo = "https://assets.dryicons.com/uploads/icon/svg/2364/male_user.svg";
-const femalelogo = "https://assets.dryicons.com/uploads/icon/svg/2433/female_user.svg";
+const male1 = "https://img.freepik.com/free-photo/business-man-by-skyscraper_1303-13655.jpg?t=st=1731605741~exp=1731609341~hmac=856d0e4ed360ad6956b7d22538246d2f3f042c96aab687295af8289d80632133&w=1060";
+const male2 = "https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg?t=st=1731605745~exp=1731609345~hmac=7e23e69bc4044335b9798a4bb261a631c5f21e93b681e491ed9ea49f902b2132&w=1060";
+const male3 = "https://img.freepik.com/free-photo/smiling-businessman-face-portrait-wearing-suit_53876-148138.jpg?t=st=1731605755~exp=1731609355~hmac=808706d4a68251dac1d1dc7257bb98cd2676f42ec93094523b5087ad8e35630e&w=996";
+const male4 = "https://img.freepik.com/free-photo/handsome-unshaven-european-man-has-serious-self-confident-expression-wears-glasses_273609-17344.jpg?t=st=1731606241~exp=1731609841~hmac=afadcda63a9c5883a001e0ed3e986b0bb9808a39b1190ac56d23cf8240af40cc&w=1060"
+const male5 = "https://img.freepik.com/free-photo/portrait-confident-serious-young-man_114579-79034.jpg?t=st=1731606255~exp=1731609855~hmac=d6eb21846f6057a53a4b24f338f59b92017858f6ca7291690c85287d70f3e325&w=1060"
+
+const female1 = "https://img.freepik.com/free-photo/portrait-smiling-blonde-woman_23-2148316635.jpg?t=st=1731605762~exp=1731609362~hmac=8e26af0a27ebb81f49250fe1ab3f7e258e7912ff2bb36980abc2ba959daaf0f1&w=740";
+const female2 = "https://img.freepik.com/free-photo/horizontal-portrait-smiling-happy-young-pleasant-looking-female-wears-denim-shirt-stylish-glasses-with-straight-blonde-hair-expresses-positiveness-poses_176420-13176.jpg?t=st=1731605765~exp=1731609365~hmac=eb6561231be3d95c10bf95f61aeb50d354485d41f7c932bbb626e1a61031b3c2&w=1060";
+const female3 = "https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?t=st=1731605674~exp=1731609274~hmac=351418f0f42cc8eb3303821dbd0f41e15cb176844e9f6da77b110629e8ffcb33&w=1060";
+const female4 = "https://img.freepik.com/free-photo/close-up-portrait-young-woman-isolated-black-studio-background-photoshot-real-emotions-female-model-smiling-feeling-happy-facial-expression-pure-clear-human-emotions-concept_155003-25750.jpg?t=st=1731606347~exp=1731609947~hmac=d0b87cc23eb41c9b94c2b4db937f9bf3929142b151ae99056d1f7544b09c571a&w=1060";
 
 const Testimonial = () => {
   useEffect(() => {
@@ -25,7 +33,7 @@ const Testimonial = () => {
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"
-                    src={femalelogo}
+                    src={female1}
                     className="h-14 w-14 rounded-full object-cover"
                   />
 
@@ -84,7 +92,7 @@ const Testimonial = () => {
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"
-                    src={logo}
+                    src={male1}
                     className="h-14 w-14 rounded-full object-cover"
                   />
 
@@ -152,7 +160,7 @@ const Testimonial = () => {
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"
-                    src={femalelogo}
+                    src={female2}
                     className="h-14 w-14 rounded-full object-cover"
                   />
 
@@ -222,7 +230,7 @@ const Testimonial = () => {
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"
-                    src={logo}
+                    src={male2}
                     className="h-14 w-14 rounded-full object-cover"
                   />
 
@@ -282,7 +290,7 @@ const Testimonial = () => {
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"
-                    src={femalelogo}
+                    src={female3}
                     className="h-14 w-14 rounded-full object-cover"
                   />
 
@@ -352,7 +360,7 @@ const Testimonial = () => {
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"
-                    src={logo}
+                    src={male3}
                     className="h-14 w-14 rounded-full object-cover"
                   />
 
@@ -420,7 +428,7 @@ const Testimonial = () => {
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"
-                    src={femalelogo}
+                    src={female4}
                     className="h-14 w-14 rounded-full object-cover"
                   />
 
@@ -489,7 +497,7 @@ const Testimonial = () => {
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"
-                    src={femalelogo}
+                    src={male4}
                     className="h-14 w-14 rounded-full object-cover"
                   />
 
@@ -538,7 +546,7 @@ const Testimonial = () => {
                     </div>
 
                     <p className="mt-0.5 text-lg font-medium text-gray-900">
-                      Sarah Smith
+                      Tayo Onalaja
                     </p>
                   </div>
                 </div>
@@ -559,7 +567,7 @@ const Testimonial = () => {
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"
-                    src={logo}
+                    src={male5}
                     className="h-14 w-14 rounded-full object-cover"
                   />
 
