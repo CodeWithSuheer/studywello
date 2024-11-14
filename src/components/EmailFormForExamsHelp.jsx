@@ -73,7 +73,7 @@ const EmailFormExamsHelp = () => {
                 <div className="content px-3 sm:px-6 mt-6 pb-8">
                     <h2 className="mb-4 text-black text-2xl font-semibold">Need Expert Help with Your Online Exam?<span className="text-[#1A73E8]"> Chat Now</span></h2>
 
-                    <p className="mb-4 text-sm sm:text-md max-w-sm mx-auto">Say Goodbye to Exam Stress - Hire a Professional for Guaranteed Results!</p>
+                    <p className="mb-4 text-sm sm:text-md max-w-sm mx-auto">Say Goodbye to Exam Stress - Hire a Professional for Guaranted  Results!</p>
 
                     <p className="mb-4 font-medium text-sm sm:text-md">24/7 Support, and Trusted Class Help.</p>
 

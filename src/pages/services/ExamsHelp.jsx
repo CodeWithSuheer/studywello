@@ -37,7 +37,7 @@ const ExamsHelp = () => {
   const studyWelloData = [
     "Professional Exam Takers",
     "Total Confidentiality",
-    "Guaranteed Success",
+    "Guaranted  Success",
     "Affordable & Flexible",
     "24/7 Support",
     "Fast Turnaround",

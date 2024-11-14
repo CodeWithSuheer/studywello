@@ -18,7 +18,7 @@ const studyWelloData = [
 ]
 
 const othersData = [
-    "No Guaranteed Grade",
+    "No Guaranted  Grade",
     "Limited Payment Methods",
     "Poor Support After Payment is Completed.",
     "No Refund Policy",
