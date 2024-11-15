@@ -154,10 +154,10 @@ const ExamsHelp = () => {
       <CtaOneV2Exams />
 
       {/* --------------- COMPARISON ---------------  */}
-      <Comparison />
+      <Comparison text="Book My Exam Help Now" />
 
       {/* --------------- SUBJECT DETAILS ---------------  */}
-      <Subject text="Help Me With Class" />
+      <Subject text="Do my Exam Now" />
 
       {/* --------------- HELP WITH ALL TYPE ---------------  */}
       <HelpWithAllType />

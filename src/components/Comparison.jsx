@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from './Button'
 
-
 const tick = (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="M4 7.5L7 10l4-5m-3.5 9.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Z" /></svg>
 )
@@ -24,7 +23,7 @@ const othersData = [
     "No Refund Policy",
 ]
 
-const Comparison = () => {
+const Comparison = ({ text = "Help Me With Class" }) => {
     return (
         <>
             <section className='py-20'>
@@ -74,7 +73,7 @@ const Comparison = () => {
                     </div>
 
                     <div className="mt-10 flex justify-center items-center">
-                        <Button text="Help Me With Class" />
+                        <Button text={text} />
                     </div>
                 </div>
             </section>
