@@ -145,7 +145,7 @@ const ExamsHelp = () => {
           </div>
 
           <div className="mt-10 flex justify-center items-center">
-            <Button text="Help Me With Class" />
+            <Button text="Book My Exam Help Now" />
           </div>
         </div>
       </section>
