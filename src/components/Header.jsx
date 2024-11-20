@@ -59,6 +59,9 @@ const Header = () => {
     setResponsiveMenu(false);
     handleMoveToTop();
   };
+
+  const currentPath = location.pathname;
+
   return (
     <>
       <nav className={`navbar md:text-sm bg-white border-b border-gray-300`}>
@@ -175,33 +178,43 @@ const Header = () => {
                       onMouseEnter={() => setIsDropDownOpen(true)}
                       onMouseLeave={() => setIsDropDownOpen(false)}
                     >
-                      <Link
-                        to="/online-classes"
-                        onClick={handleLinkClick}
-                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
-                      >
-                        Online Classes
-                      </Link>
+                      {currentPath !== "/do-my-class" ? (
+                        <Link
+                          to="/online-classes"
+                          onClick={handleLinkClick}
+                          className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
+                        >
+                          Online Classes
+                        </Link>
+                      ) : (
+                        <Link
+                          to="/do-my-class"
+                          onClick={handleLinkClick}
+                          className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
+                        >
+                          Do My Class
+                        </Link>
+                      )}
 
                       <hr className="border-gray-200" />
 
-                      {/* <Link
-                        to="/do-my-class"
-                        onClick={handleLinkClick}
-                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
-                      >
-                        Do My Class
-                      </Link> */}
-
-                      <hr className="border-gray-200" />
-
-                      <Link
-                        to="/exams"
-                        onClick={handleLinkClick}
-                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
-                      >
-                        Exams
-                      </Link>
+                      {currentPath !== "/exams-help" ? (
+                        <Link
+                          to="/exams"
+                          onClick={handleLinkClick}
+                          className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
+                        >
+                          Exams
+                        </Link>
+                      ) : (
+                        <Link
+                          to="/exams-help"
+                          onClick={handleLinkClick}
+                          className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
+                        >
+                          Exams Help
+                        </Link>
+                      )}
 
                       <hr className="border-gray-200" />
 
@@ -212,6 +225,14 @@ const Header = () => {
                       >
                         Assignments
                       </Link>
+
+                      {/* <Link
+                        to="/do-my-class"
+                        onClick={handleLinkClick}
+                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
+                      >
+                        Do My Class
+                      </Link> */}
                     </div>
                   )}
                 </div>
