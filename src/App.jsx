@@ -1,25 +1,34 @@
 import { useRef } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { Toaster } from "react-hot-toast";
+
+// Internal modules/components
 import ScrollToTop from "./utils/helpers/scroll-to-top";
 
-// section
+// Pages
 import HomePage from "./pages/home/HomePage";
-import Footer from "./components/Footer";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
 import Samples from "./pages/samples/Samples";
 import Exams from "./pages/services/Exams";
 import Assignments from "./pages/services/Assignments";
 import OnlineClasses from "./pages/services/OnlineClasses";
-import NotFound from "./components/NotFound";
-import Header from "./components/Header";
-import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
-import "./App.css";
-import { Toaster } from "react-hot-toast";
 import DoMyClass from "./pages/services/DoMyClass";
 import ExamsHelp from "./pages/services/ExamsHelp";
+import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
+
+// Components
+import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
+import Header from "./components/Header";
+import WhatsappButton from "./components/whatsappButton";
+
+// Styles
+import "./App.css";
+import HelpWithClasses from "./pages/services/HelpWithClasses";
+import HelpWithExams from "./pages/services/HelpWithExams";
+
 
 function App() {
   const tawkMessengerRef = useRef();
@@ -56,20 +65,19 @@ function App() {
           {/* SERVICES */}
           <Route path="/exams" element={<Exams />} />
           <Route path="/assignments" element={<Assignments />} />
-          <Route path="/online-classes" element={<OnlineClasses />} />
           <Route path="/do-my-class" element={<DoMyClass />} />
-          <Route path="/exams-help" element={<ExamsHelp />} />
+
+          {/* HIDDEN PAGES */}
+          {/* <Route path="/online-classes" element={<OnlineClasses />} /> */}
+          {/* <Route path="/exams-help" element={<ExamsHelp />} /> */}
+
+          {/* NEW PAGES */}
+          <Route path="/help-with-exam" element={<HelpWithExams />} />
+          <Route path="/help-with-class" element={<HelpWithClasses />} />
         </Routes>
 
         {/* WhatsApp button */}
-        <a
-          href="https://api.whatsapp.com/send?phone=17163749747"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="whatsapp-btn flex items-center gap-2 rounded-full px-3 sm:px-5 py-3"
-        >
-          <FaWhatsapp size={33} /> <span className="hidden sm:flex">Free Quote On Whatsapp</span>
-        </a>
+        <WhatsappButton />
 
         <Footer />
         <Toaster />

@@ -5,32 +5,32 @@ const content = [
     {
         id: 1,
         title: "Quizzes",
-        description: "Quick assessments designed to gauge your grasp of specific topics or concepts. Perfect for staying on top of class materials."
+        description: "Quick assessments designed to gauge your understanding of specific topics or concepts. Our experts offer guidance to help you stay on top of class materials."
     },
     {
         id: 2,
         title: "Proctored Exams",
-        description: "Secure, monitored exams taken under supervision, ensuring compliance with strict testing standards. We provide trusted assistance for proctored environments."
+        description: "Secure, monitored exams taken under strict conditions. We provide trusted support and strategies to help you confidently navigate these supervised environments."
     },
     {
         id: 3,
         title: "Entrance Exams",
-        description: "Get support with exams required for entry into colleges, graduate programs, or professional schools—like the SAT, GRE, GMAT, or MCAT."
+        description: "From SATs to graduate-level assessments like the GRE, GMAT, or MCAT, we offer expert guidance and preparation resources to boost your confidence and performance."
     },
     {
         id: 4,
         title: "Lockdown Exams",
-        description: "Specialized help for exams with restricted access and advanced security protocols, such as lockdown browsers or remote proctoring."
+        description: "Receive specialized advice for exams featuring advanced security protocols, such as lockdown browsers and remote proctoring, ensuring you're fully prepared."
     },
     {
         id: 5,
         title: "Midterms & Finals",
-        description: "Critical assessments that determine your overall performance for the term. Let us help you ace these comprehensive exams."
+        description: "Critical assessments that shape your overall performance. We're here to reinforce your understanding, fine-tune your exam strategies, and help you excel."
     },
     {
         id: 6,
         title: "Certification Exams",
-        description: "Professional certifications are vital for career growth. Our experts assist with exams for various certifications, ensuring you're fully prepared for success."
+        description: "Earn professional certifications with greater ease. Our dedicated experts assist you in honing your skills, so you're ready to achieve the qualifications you need for career advancement."
     }
 ];
 
@@ -44,7 +44,7 @@ const HelpWithAllType = () => {
 
                     <div className="mb-14 header">
                         <h2 className="font-bold text-2xl md:text-4xl w-[95%] max-w-5xl mx-auto text-[#272727] text-start sm:text-center">
-                            Comprehensive Help with All Types of Online Exams - Whatever You Need, We've Got It Covered!
+                            Comprehensive Support for All Types of Online Exams - We've Got You Covered!
                         </h2>
                     </div>
 

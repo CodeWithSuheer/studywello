@@ -2,7 +2,7 @@ import React from 'react';
 import { FaDotCircle } from "react-icons/fa";
 import Button from './Button';
 
-const Subject = ({ text = "Let's Talk" }) => {
+const Subject = ({ heading = "Subject We Work On", text = "Let's Talk" }) => {
     const subjectName = [
         "English", "Math", "Statistics", "HRM Class", "Anatomy and Physiology",
         "Accounting", "Computer Science", "History", "Operation Management",
@@ -22,7 +22,7 @@ const Subject = ({ text = "Let's Talk" }) => {
             <section className='bg-white'>
                 <div className="max-w-7xl mx-auto pt-16 pb-3 sm:pb-6 px-3 lg:px-0">
                     {/* --------------- HEADER TEXT ---------------  */}
-                    <h2 className="mb-3 font-bold text-3xl md:text-4xl w-[95%] sm:w-[100%] mx-auto text-[#272727] text-center">Subject We Work On</h2>
+                    <h2 className="mb-3 font-bold text-3xl md:text-4xl w-[95%] sm:w-[100%] mx-auto text-[#272727] text-center">{heading}</h2>
 
                     <div className="mt-10 flex justify-center items-center flex-wrap gap-x-3 sm:gap-x-5 gap-y-3 sm:gap-y-5">
                         {subjectName?.map((data, index) => (

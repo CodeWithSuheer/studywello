@@ -3,7 +3,9 @@ import { FaPhone } from "react-icons/fa6";
 import PhoneNumberForm from './PhoneNumberForm';
 import Button from './Button';
 
-const CtaOneV2Exams = () => {
+const CtaOneV2Exams = ({
+  desc = "Hiring us to take your online class for you is a small investment for good grades"
+}) => {
   return (
     <>
       <section className="body-font bg-gray-50">
@@ -15,7 +17,7 @@ const CtaOneV2Exams = () => {
 
               <h1 className="mb-1 pb-3 font-bold max-w-xl text-3xl md:text-5xl bg-gradient-to-tr from-blue-600  to-blue-300 bg-clip-text text-transparent">Take the Stress Out of Exams – Get Expert Help Today!</h1>
 
-              <p className="mb-6 max-w-md text-gray-700 leading-relaxed text-lg">Hiring us to take your online class for you is a small investment for good grades</p>
+              <p className="mb-6 max-w-md text-gray-700 leading-relaxed text-lg">{desc}</p>
 
               <div className="button">
                 {/* <div className="max-w-md">

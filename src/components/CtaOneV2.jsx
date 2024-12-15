@@ -3,7 +3,11 @@ import { FaPhone } from "react-icons/fa6";
 import PhoneNumberForm from './PhoneNumberForm';
 import Button from './Button';
 
-const CtaOneV2 = () => {
+const CtaOneV2 = ({
+  mainHeading = "Say goodbye to the struggle with Grades, Hire now and lock your grades",
+  subHeading = "Hiring us to take your online class for you is a small investment for good grades",
+  buttonText = "Do my class",
+}) => {
   return (
     <>
       <section className="body-font bg-gray-50">
@@ -13,21 +17,15 @@ const CtaOneV2 = () => {
 
             <div className="lg:col-span-3 lg:flex-grow pr-8 flex flex-col text-start">
 
-              <h1 className="mb-1 pb-3 font-bold max-w-xl text-3xl md:text-5xl bg-gradient-to-tr from-blue-600  to-blue-300 bg-clip-text text-transparent">Say goodbye to the struggle with Grades, Hire now and lock your grades</h1>
+              <h1 className="mb-1 pb-3 font-bold max-w-xl text-3xl md:text-5xl bg-gradient-to-tr from-blue-600  to-blue-300 bg-clip-text text-transparent">{mainHeading}</h1>
 
-              <p className="mb-6 max-w-md text-gray-700 leading-relaxed text-lg">Hiring us to take your online class for you is a small investment for good grades</p>
+              <p className="mb-6 max-w-md text-gray-700 leading-relaxed text-lg">{subHeading}</p>
 
               <div className="button">
-                {/* <div className="max-w-md">
-                  <PhoneNumberForm />
-                </div> */}
                 <div className="flex justify-start">
-                  <Button text="Do my class" />
+                  <Button text={buttonText} />
                 </div>
               </div>
-
-              {/* <p className="mt-3 max-w-md text-gray-700 leading-relaxed text-xs">We need your number to provide our services as it is the fastest form of communication. We do not spam.</p> */}
-
             </div>
 
             <div className="lg:col-span-2 lg:max-w-lg lg:w-full mb-10 md:mb-0">

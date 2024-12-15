@@ -15,9 +15,10 @@ import CtaOneV2Exams from "../../components/CtaOneV2Exams";
 
 // Image
 import img from "./img1.jpg";
+import EmailFormForHelpWithExams from "../../components/email-forms/EmailFormForHelpWithExams";
 
 
-const ExamsHelp = () => {
+const HelpWithExams = () => {
   const images = [
     {
       img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss1.png?v=1713880333",
@@ -38,9 +39,8 @@ const ExamsHelp = () => {
   )
 
   const studyWelloData = [
-    "Professional Exam Takers",
+    "Professional Exam Helpers",
     "Total Confidentiality",
-    "Guaranted  Success",
     "Affordable & Flexible",
     "24/7 Support",
     "Fast Turnaround",
@@ -63,7 +63,7 @@ const ExamsHelp = () => {
                 No More Exam Stress
               </h1>
               <h1 className="mb-5 font-bold max-w-lg text-3xl md:text-4xl text-white">
-                Secure Top Grades with 100% Confidential Online Exam Assistance!
+                Secure Top Grades with Expert's Online Exam Help
               </h1>
 
 
@@ -83,7 +83,7 @@ const ExamsHelp = () => {
 
             {/* EMAIL FORM */}
             <div className="lg:max-w-lg lg:w-1/2 w-full px-2 mt-10 lg:mt-0">
-              <EmailFormExamsHelp />
+              <EmailFormForHelpWithExams />
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ const ExamsHelp = () => {
               No More Exam Stress This Season - We're Here to Help!
             </h1>
             <p className="mb-6 leading-relaxed">
-              Exams can be overwhelming, but you don't have to face them alone. With StudyWello, get expert assistance from professionals across various subjects, ensuring top results with ease. Reach out, relax, and let us handle everything with complete confidentiality and around-the-clock support. Plus, our student-friendly rates mean quality help that won't break the bank.
+              Exams can be overwhelming, but you don't have to face them alone. With StudyWello, get expert guidance and support from professionals across various subjects, ensuring top results with ease. Reach out, relax, and let us provide you with tailored assistance with complete confidentiality and around-the-clock support. Plus, our student-friendly rates mean quality help that won't break the bank.
             </p>
             <div className="flex justify-start">
               <Button text="Click to Avail Discount" />
@@ -154,7 +154,7 @@ const ExamsHelp = () => {
       </section>
 
       {/* --------------- CTAV2 ---------------  */}
-      <CtaOneV2Exams />
+      <CtaOneV2Exams desc="Hiring experts to assist with your online Exam is a smart investment for achieving good grades." />
 
       {/* --------------- COMPARISON ---------------  */}
       <Comparison text="Book My Exam Help Now" />
@@ -174,4 +174,4 @@ const ExamsHelp = () => {
   );
 };
 
-export default ExamsHelp;
+export default HelpWithExams;
