@@ -1,28 +1,38 @@
-import Services from "./Services";
+import { Helmet } from "react-helmet";
+import { useEffect, useState } from "react";
+
+import "./Home.css";
+
+// Local components
+import Button from "../../components/Button";
+import CtaOneV2 from "../../components/CtaOneV2";
+import Comparison from "../../components/Comparison";
+import Subject from "../../components/Subject";
+import HomeAssignmentServices from "../../components/HomeServices";
+import OpeningModal from "../../components/modals/popupModal";
+import EmailFormForHome from "../../components/email-forms/EmailFormForHome";
+
 import LogoGrid from "./LogoGrid";
 import ChooseFrom from "./ChooseFrom";
 import Commitments from "./Commitments";
-import Button from "../../components/Button";
 import Testimonial from "./Testimonial";
-import Process from "./Process";
-import Faq from "./Faq";
 import CtaTwo from "./CtaTwo";
 import CtaOne from "./CtaOne";
-import "./Home.css";
-import { Helmet } from "react-helmet";
-import CtaOneV2 from "../../components/CtaOneV2";
-import PhoneNumberForm from "../../components/PhoneNumberForm";
-import Comparison from "../../components/Comparison";
 import HomeServices from "./HomeServices";
 import HomeProcess from "./HomeProcess";
-import Subject from "../../components/Subject";
 import FaqHome from "./FaqHome";
-import HomeAssignmentServices from "../../components/HomeServices";
-import OpeningModal from "../../components/modals/popupModal";
-import { useState } from "react";
+
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const tick = (
     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5" /></svg>
@@ -46,42 +56,48 @@ const HomePage = () => {
       </Helmet>
 
       {/* --------------- HERO SECTION ---------------  */}
-      <section className="gradient">
-        <div className="max-w-full pt-28 pb-20 lg:pt-24 xl:pt-16 lg:pb-10 mx-auto">
-          <div className="items-center lg:flex lg:min-h-[90vh]">
-            <div className="pt-0 md:pt-2 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-2">
-              <div className="content px-5 pt-0 pb-8 sm:pt-14 md:pb-12 sm:px-4 md:px-20 lg:pl-14 xl:pl-16 xl:pr-0">
-                <h2 className="mainHeading mb-5">
-                  Your Trusted Academic Partner for Exams, Assignments & Online Classes
-                </h2>
-                <p className="mb-3 sm:text-md md:text-md xl:text-lg font-normal">
-                  Overwhelmed by coursework? Looking to excel in complex subjects? StudyWello connects you with seasoned academic professionals who provide personalized guidance, helping you learn more efficiently, gain confidence, and achieve better results.
-                </p>
+      <section className="text-white onlineClass_backgroundImage mb-0 lg:mb-0">
+        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[95vh] relative z-10">
+          <div className="flex flex-col lg:flex-row justify-center items-center">
 
-                {/* <button onClick={() => setIsOpen(true)}>
+            {/* CONTENT */}
+            <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
+              <h2 className="mainHeading mb-5">
+                Your Trusted Academic Partner for Exams, Assignments & Online Classes
+              </h2>
+              <p className="mb-3 sm:text-md md:text-md xl:text-lg font-normal">
+                Overwhelmed by coursework? Looking to excel in complex subjects? StudyWello connects you with seasoned academic professionals who provide personalized guidance, helping you learn more efficiently, gain confidence, and achieve better results.
+              </p>
+
+              {/* <button onClick={() => setIsOpen(true)}>
                   Open Modal
                 </button> */}
 
-                {studyWelloData?.map((data, index) => (
-                  <div key={index} className="flex gap-x-2 sm:gap-x-3 justify-start items-center">
-                    <span className="icon text-green-500">
-                      {tick}
-                    </span>
-                    <p className='text-sm sm:text-lg font-normal'>{data}</p>
-                  </div>
-                ))}
-
-                <div className="mt-6 flex justify-start">
-                  <Button text="Get a Free Quote Now " />
+              {studyWelloData?.map((data, index) => (
+                <div key={index} className="flex gap-x-2 sm:gap-x-3 justify-start items-center">
+                  <span className="icon text-green-500">
+                    {tick}
+                  </span>
+                  <p className='text-sm sm:text-lg font-normal'>{data}</p>
                 </div>
-              </div>
+              ))}
 
-              <div className="content pt-0 sm:pt-14 lg:pt-8">
+              <div className="mt-6 flex justify-start">
+                <Button text="Get a Free Quote Now " />
+              </div>
+            </div>
+
+
+            {/* <div className="content pt-0 sm:pt-14 lg:pt-8">
                 <img
                   src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Group_72166_f8ee09d3-a74c-4a61-886e-610b0b8adb4a.png?v=1713266395"
                   alt=""
                 />
-              </div>
+              </div> */}
+
+            {/* EMAIL FORM */}
+            <div className="lg:max-w-lg lg:w-1/2 w-full px-2 mt-10 lg:mt-0">
+              <EmailFormForHome />
             </div>
           </div>
         </div>
