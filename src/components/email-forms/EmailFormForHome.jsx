@@ -118,7 +118,7 @@ const EmailFormForHome = () => {
                         disabled={loading}
                         className={`${loading ? "cursor-not-allowed" : ""} flex justify-center gap-x-1 items-center bg-[#1A73E8] text-white font-medium rounded-md w-full text-sm px-5 py-2.5`}
                     >
-                        {loading ? (<>Submitting...</>) : (<>Text Me <IoArrowForward /></>)}
+                        {loading ? (<>Submitting...</>) : (<>Chat Now <IoArrowForward /></>)}
                     </button>
 
                     <span className="my-4 relative flex justify-center">

@@ -178,7 +178,7 @@ const Header = () => {
                       onMouseEnter={() => setIsDropDownOpen(true)}
                       onMouseLeave={() => setIsDropDownOpen(false)}
                     >
-                      {currentPath !== "/do-my-class" ? (
+                      {/* {currentPath !== "/do-my-class" ? (
                         <Link
                           to="/online-classes"
                           onClick={handleLinkClick}
@@ -194,11 +194,19 @@ const Header = () => {
                         >
                           Do My Class
                         </Link>
-                      )}
+                      )} */}
+
+                      <Link
+                        to="/do-my-class"
+                        onClick={handleLinkClick}
+                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
+                      >
+                        Do My Class
+                      </Link>
 
                       <hr className="border-gray-200" />
 
-                      {currentPath !== "/exams-help" ? (
+                      {/* {currentPath !== "/exams-help" ? (
                         <Link
                           to="/exams"
                           onClick={handleLinkClick}
@@ -214,7 +222,15 @@ const Header = () => {
                         >
                           Exams Help
                         </Link>
-                      )}
+                      )} */}
+
+                      <Link
+                        to="/exams-help"
+                        onClick={handleLinkClick}
+                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
+                      >
+                        Exams Help
+                      </Link>
 
                       <hr className="border-gray-200" />
 

@@ -157,10 +157,13 @@ const HelpWithExams = () => {
       <CtaOneV2Exams desc="Hiring experts to assist with your online Exam is a smart investment for achieving good grades." />
 
       {/* --------------- COMPARISON ---------------  */}
-      <Comparison text="Book My Exam Help Now" />
+      <Comparison
+        mainHeading="Why You Should Hire Us To Support Your Online Exams"
+        text="Book My Exam Help Now"
+      />
 
       {/* --------------- SUBJECT DETAILS ---------------  */}
-      <Subject text="Do my Exam Now" />
+      <Subject text="Book My Exam Help" />
 
       {/* --------------- HELP WITH ALL TYPE ---------------  */}
       <HelpWithAllType />

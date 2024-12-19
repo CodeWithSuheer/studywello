@@ -174,17 +174,23 @@ const HomePage = () => {
       <HomeServices />
 
       {/* --------------- CTA SECTION ---------------  */}
-      <CtaOneV2 />
+      <CtaOneV2
+        mainHeading="Eliminate Grade Stress - Invest in Expert Academic Support Today"
+        subHeading="Partner with StudyWello achieve top grades with professional guidance. A small investment for significant academic success."
+        buttonText="Get Expert Support Now"
+      />
 
       <Comparison
         mainHeading="Why Should You Hire Us to Support Your Online Class, Assignments & Exams?"
         subHeading="We can meet the standards of all universities and schools, ensuring that our assistance aligns perfectly with your academic requirements."
+        buttonText="Get Expert Support Now"
       />
 
-      <CtaOne text="Take my class" />
 
       {/* --------------- PROCESS WE FOLLOW ---------------  */}
       <HomeProcess />
+
+      <CtaOne text="Get Expert Support Now" />
 
       <Subject heading="Subjects We have Professionals For" />
 
@@ -192,7 +198,7 @@ const HomePage = () => {
       <Commitments />
 
       {/* ---------------SECOND CTA SECTION ---------------  */}
-      <CtaTwo text="Do my class" />
+      <CtaTwo text="Get Expert Support Now" />
 
       {/* ---------------FAQ'S ---------------  */}
       <FaqHome />

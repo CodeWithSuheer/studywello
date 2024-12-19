@@ -165,7 +165,7 @@ const HelpWithClasses = () => {
       </section>
 
       {/* --------------- CTA SECTION ---------------  */}
-      <CtaOne text="Take my class" />
+      <CtaOne text="Help Me with My Class" />
 
       {/* --------------- PROCESS WE FOLLOW ---------------  */}
       <ProcessForHelpWithClass />
@@ -251,7 +251,7 @@ const HelpWithClasses = () => {
       </section>
 
       {/* --------------- SECOND CTA SECTION ---------------  */}
-      <CtaTwo text="Do my class" />
+      <CtaTwo text="Help Me with My Class" />
 
       {/* --------------- SUBJECT DETAILS ---------------  */}
       <Subject />

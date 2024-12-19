@@ -76,7 +76,7 @@ const Assignments = () => {
       </Helmet>
 
       {/* --------------- HERO SECTION ---------------  */}
-      <section className="text-white banner_backgroundImage mb-0 lg:mb-0 ">
+      <section className="text-white assignment_backgroundImage mb-0 lg:mb-0">
         <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[95vh] relative z-10">
           <div className="flex flex-col lg:flex-row justify-center items-center">
             {/* CONTENT */}
@@ -147,7 +147,7 @@ const Assignments = () => {
       <Samples />
 
       {/* --------------- CTA SECTION ---------------  */}
-      <CtaOne text="Write my assignment" />
+      <CtaOne text="Help Me With Assignment" />
 
       {/* --------------- PROOF ---------------  */}
       <section className="bg-white">
@@ -182,6 +182,7 @@ const Assignments = () => {
       <Comparison
         mainHeading="Why Should You Hire Us to Support Your Assignments & Homework?"
         subHeading="We can meet the standards of all universities and schools, ensuring that our assistance aligns perfectly with your academic requirements."
+        buttonText="Help Me With Assignment"
       />
 
       {/* --------------- SERVICES ---------------  */}

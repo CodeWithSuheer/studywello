@@ -69,7 +69,8 @@ function App() {
 
           {/* HIDDEN PAGES */}
           {/* <Route path="/online-classes" element={<OnlineClasses />} /> */}
-          {/* <Route path="/exams-help" element={<ExamsHelp />} /> */}
+          
+          <Route path="/exams-help" element={<ExamsHelp />} />
 
           {/* NEW PAGES */}
           <Route path="/help-with-exam" element={<HelpWithExams />} />

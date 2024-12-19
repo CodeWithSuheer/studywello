@@ -19,7 +19,7 @@ const CtaOneV2 = ({
 
               <h1 className="mb-1 pb-3 font-bold max-w-xl text-3xl md:text-5xl bg-gradient-to-tr from-blue-600  to-blue-300 bg-clip-text text-transparent">{mainHeading}</h1>
 
-              <p className="mb-6 max-w-md text-gray-700 leading-relaxed text-lg">{subHeading}</p>
+              <p className="mb-6 max-w-lg text-gray-700 leading-relaxed text-lg">{subHeading}</p>
 
               <div className="button">
                 <div className="flex justify-start">
