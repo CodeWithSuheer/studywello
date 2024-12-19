@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoMdEye } from 'react-icons/io'
+import { Link } from 'react-router-dom'
 
 const samples = [
     {
@@ -43,7 +44,7 @@ function SampleCard({ sample }) {
     }
 
     return (
-        <div className="bg-white p-6 rounded-xl shadow-lg">
+        <div className="bg-white p-6 rounded-xl shadow-lg min-w-[20rem] mx-auto">
             <div className="flex items-center gap-3 mb-4">
                 <div
                     className="w-10 h-10 flex items-center justify-center rounded"
@@ -79,10 +80,10 @@ function SampleCard({ sample }) {
                 </div>
             </div>
 
-            <button className="w-full bg-[#1A73E8] text-white py-2 rounded-md flex items-center justify-center gap-2 transition-colors mb-3">
+            <Link to="/samples" className="w-full bg-[#1A73E8] text-white py-2 rounded-md flex items-center justify-center gap-2 transition-colors mb-3">
                 <IoMdEye size={20} />
                 <span>View Full Sample</span>
-            </button>
+            </Link>
 
             <div className="text-center flex justify-center items-center gap-2">
                 <div className="font-semibold mb-1">Rating <span className='text-yellow-400 text-xl'>{renderStars(sample.rating)}</span></div>
@@ -93,11 +94,11 @@ function SampleCard({ sample }) {
 
 export default function Samples() {
     return (
-        <div className=" bg-[#F4F8FE] py-16 px-4">
+        <div className="bg-[#F4F8FE] pt-10 pb-14 px-4">
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-4xl font-bold text-black text-center mb-12">Our Samples</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {samples.map((sample, index) => (
+                    {samples?.map((sample, index) => (
                         <SampleCard key={index} sample={sample} />
                     ))}
                 </div>
