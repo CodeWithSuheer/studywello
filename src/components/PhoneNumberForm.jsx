@@ -62,7 +62,7 @@ const PhoneNumberForm = () => {
                     <FaPhone className='text-blue-600' size={20} />
                 </div>
                 <input
-                    type="search"
+                    type="number"
                     id="default-search"
                     value={formdata.phone}
                     onChange={(e) => setFormdata({ ...formdata, phone: e.target.value })}

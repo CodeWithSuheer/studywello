@@ -21,6 +21,8 @@ import SeoContentBlock from "../../components/SeoContentBlock";
 import PhoneNumberForm from "../../components/PhoneNumberForm";
 import Comparison from "../../components/Comparison";
 import EmailFormExamsHelp from "../../components/EmailFormForExamsHelp";
+import EmailFormForDoMyClass from "../../components/EmailFormForDoMyClass";
+import { Link } from "react-router-dom";
 
 
 const DoMyClass = () => {
@@ -39,6 +41,11 @@ const DoMyClass = () => {
     },
   ];
 
+  const handleMoveToTop = () => {
+    window.scroll(0, 0)
+  }
+
+
   return (
     <>
       <Helmet>
@@ -48,7 +55,7 @@ const DoMyClass = () => {
 
       {/* --------------- HERO SECTION ---------------  */}
       <section className="text-white onlineClass_backgroundImage mb-0 lg:mb-0">
-        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[95vh] relative z-10">
+        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[100vh] relative z-10">
           <div className="flex flex-col lg:flex-row justify-center items-center">
             {/* CONTENT */}
             <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
@@ -96,7 +103,7 @@ const DoMyClass = () => {
 
             {/* EMAIL FORM */}
             <div className="lg:max-w-lg lg:w-1/2 w-full px-2 mt-10 lg:mt-0">
-              <EmailFormExamsHelp />
+              <EmailFormForDoMyClass />
             </div>
           </div>
         </div>
@@ -206,9 +213,7 @@ const DoMyClass = () => {
                 an A+ grade for sure.
               </p>
 
-              <button className="flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white">
-                READ MORE <FaArrowRightLong size={14} />
-              </button>
+              <Link to="/exams-help" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
             </div>
 
             {/* CARD 2 */}
@@ -230,9 +235,7 @@ const DoMyClass = () => {
                 grammatically correct and plagiarism-free.
               </p>
 
-              <button className="flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white">
-                READ MORE <FaArrowRightLong size={14} />
-              </button>
+              <Link to="/assignments" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
             </div>
 
             {/* CARD 3 */}
@@ -255,9 +258,7 @@ const DoMyClass = () => {
                 revisions.
               </p>
 
-              <button className="flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white">
-                READ MORE <FaArrowRightLong size={14} />
-              </button>
+              <Link to="/help-with-class" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
             </div>
           </div>
         </div>

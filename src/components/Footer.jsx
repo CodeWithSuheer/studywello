@@ -30,36 +30,24 @@ const Footer = () => {
                         {/* QUICK LINKS */}
                         <div>
                             <p className="text-xl font-semibold text-black">Quick Link</p>
-                            <div className="flex flex-col items-start mt-3 space-y-2">
-                                <Link
-                                    to="/"
-                                    onClick={handleMoveToTop}
-                                    className="text-black transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-                                >
-                                    Home
-                                </Link>
-                                <Link
-                                    to="/about"
-                                    onClick={handleMoveToTop}
-                                    className="text-black transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-                                >
-                                    About Us
-                                </Link>
-                                <Link
-                                    to="/contact"
-                                    onClick={handleMoveToTop}
-                                    className="text-black transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-                                >
-                                    Contact Us
-                                </Link>
-                                <Link
-                                    to="/privacy-policy"
-                                    onClick={handleMoveToTop}
-                                    className="text-black transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-                                >
-                                    Privacy Policy
-                                </Link>
-                            </div>
+                            <ul className="mt-3 space-y-2">
+                                {[
+                                    { label: "Home", to: "/" },
+                                    { label: "About Us", to: "/about" },
+                                    { label: "Contact Us", to: "/contact" },
+                                    { label: "Privacy Policy", to: "/privacy-policy" }
+                                ].map((link) => (
+                                    <li key={link.to}>
+                                        <Link
+                                            to={link.to}
+                                            onClick={handleMoveToTop}
+                                            className="text-black hover:text-blue-600 transition-colors duration-300"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
 
                         {/* PRODUCT & CATEGORIES */}
@@ -67,27 +55,24 @@ const Footer = () => {
                             <p className="text-xl font-semibold text-black">
                                 Services
                             </p>
-                            <div className="flex flex-col items-start mt-3 space-y-2">
-                                <Link
-                                    to="/online-classes"
-                                    className="text-black transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-                                >
-                                    Online Class
-                                </Link>
-                                <Link
-                                    to="/exams"
-                                    className="text-black transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-                                >
-                                    Exams
-                                </Link>
-                                <Link
-                                    to="/assignments"
-                                    className="text-black transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-                                >
-                                    Assignments
-                                </Link>
-
-                            </div>
+                            <ul className="mt-3 space-y-2">
+                                {[
+                                    { label: "Do My Class", to: "/do-my-class" },
+                                    { label: "Exams Help", to: "/exams-help" },
+                                    { label: "Help With Class", to: "/help-with-class" },
+                                    { label: "Help With Exam", to: "/help-with-exam" },
+                                    { label: "Assignments", to: "/assignments" }
+                                ].map((link) => (
+                                    <li key={link.to}>
+                                        <Link
+                                            to={link.to}
+                                            className="text-black hover:text-blue-600 transition-colors duration-300"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
 
                         {/* PRODUCT & CATEGORIES */}

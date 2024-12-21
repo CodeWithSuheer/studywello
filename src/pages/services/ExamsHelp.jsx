@@ -55,7 +55,7 @@ const ExamsHelp = () => {
 
       {/* --------------- HERO SECTION ---------------  */}
       <section className="text-white onlineClass_backgroundImage mb-0 lg:mb-0">
-        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[95vh] relative z-10">
+        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[100vh] relative z-10">
           <div className="flex flex-col lg:flex-row justify-center items-center">
             {/* CONTENT */}
             <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">

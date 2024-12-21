@@ -234,15 +234,6 @@ const Header = () => {
 
                       <hr className="border-gray-200" />
 
-                      <Link
-                        to="/help-with-exam"
-                        onClick={handleLinkClick}
-                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
-                      >
-                        Help With Exam
-                      </Link>
-
-                      <hr className="border-gray-200" />
 
                       <Link
                         to="/help-with-class"
@@ -250,6 +241,16 @@ const Header = () => {
                         className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
                       >
                         Help With Class
+                      </Link>
+
+                      <hr className="border-gray-200" />
+
+                      <Link
+                        to="/help-with-exam"
+                        onClick={handleLinkClick}
+                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
+                      >
+                        Help With Exam
                       </Link>
 
                       <hr className="border-gray-200" />

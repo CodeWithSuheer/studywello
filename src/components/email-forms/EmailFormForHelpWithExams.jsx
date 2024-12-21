@@ -12,6 +12,7 @@ const EmailFormForHelpWithExams = () => {
 
     const [formdata, setFormdata] = useState({
         name: "",
+        email: "",
         phone: "",
     });
 
@@ -21,6 +22,10 @@ const EmailFormForHelpWithExams = () => {
 
         if (!formdata.name) {
             toast.error('Please enter your name');
+            return;
+        }
+        if (!formdata.email) {
+            toast.error('Please enter your email Address');
             return;
         }
         if (!formdata.phone) {
@@ -36,6 +41,7 @@ const EmailFormForHelpWithExams = () => {
                 {
                     name: formdata.name,
                     phone: formdata.phone,
+                    email: formdata.email,
                 },
                 {
                     publicKey: 'AMubOSywU-D9bjMSb',
@@ -60,6 +66,7 @@ const EmailFormForHelpWithExams = () => {
     const reset = () => {
         setFormdata({
             name: "",
+            email: "",
             phone: "",
         });
     }
@@ -68,14 +75,15 @@ const EmailFormForHelpWithExams = () => {
         <>
             <div className="w-full text-center bg-[#F2EFFF] text-black rounded-xl shadow-xl">
 
-                <div className="box px-2 bg-blue-200 text-blue-700 font-semibold py-4 rounded-t-xl text-md sm:text-lg tracking-wide">50% Off! 🌟 on Your First Exam Assistance Order</div>
+                <div className="box px-2 bg-blue-200 text-blue-700 font-semibold py-4 rounded-t-xl text-md sm:text-lg tracking-wide">15% Off! 🌟 on Your First Online Exam</div>
 
-                <div className="content px-3 sm:px-6 mt-6 pb-8">
+                <div className="content px-3 sm:px-6 mt-6 pb-6">
                     <h2 className="mb-4 text-black text-2xl font-semibold">Need Expert Help with Your Online Exam?<span className="text-[#1A73E8]"> Chat Now</span></h2>
 
                     <p className="mb-4 text-sm sm:text-md max-w-sm mx-auto">Say Goodbye to Exam Stress - Hire a Professional to Help You Get Top Grades!</p>
 
                     <p className="mb-4 font-medium text-sm sm:text-md">24/7 Support, and Trusted Class Help.</p>
+
 
 
                     {/* FIELDS */}
@@ -96,6 +104,14 @@ const EmailFormForHelpWithExams = () => {
                                 onChange={(e) => setFormdata({ ...formdata, phone: e.target.value })}
                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Phone Number*" required />
                         </div>
+                        <div className="mb-2 col-span-2">
+                            <input
+                                id="email"
+                                type="email"
+                                onChange={(e) => setFormdata({ ...formdata, email: e.target.value })}
+                                value={formdata.email}
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Email Address*" required />
+                        </div>
                     </div>
 
                     <button
@@ -106,7 +122,7 @@ const EmailFormForHelpWithExams = () => {
                         {loading ? (<>Submitting...</>) : (<>Text Me <IoArrowForward /></>)}
                     </button>
 
-                    <span className="my-4 relative flex justify-center">
+                    <span className="my-2 relative flex justify-center">
                         <div
                             className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
                         ></div>
@@ -133,9 +149,6 @@ const EmailFormForHelpWithExams = () => {
                             className="flex text-nowrap w-32 justify-center shadow-sm border border-gray-300 gap-x-1 items-center bg-white text-black font-medium rounded-md text-sm px-5 py-2.5"><MdEmail className='text-red-500' size={22} /> Email Us</a>
                     </div>
                 </div>
-
-
-
             </div>
         </>
     )

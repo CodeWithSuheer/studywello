@@ -34,7 +34,7 @@ const Services = () => {
                                 Our online class support service is structured to offer you the help you need to do well in your coursework. If you're finding it hard to stay on track with your online classes or could use some extra assistance to stand out in your studies, our experienced tutors and academic experts are ready to aid you.
                             </p>
 
-                            <Link to="/online-classes" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
+                            <Link to="/help-with-class" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
                         </div>
 
                         {/* CARD 2 */}
@@ -47,7 +47,7 @@ const Services = () => {
                             <h3 className="mb-2 font-medium text-xl text-[#1A73E8] group-hover:text-white">Online Exam Help</h3>
                             <p className="mb-3 sm:mb-4 text-sm leading-6 font-normal text-black group-hover:text-white">Feeling overwhelmed with studying for a significant exam? Let our online exam help guide you in the right direction towards success! Our team of knowledgeable experts can help you grasp important concepts, create solid study techniques, and ace practice exams to ensure you're fully prepared.</p>
 
-                            <Link to="/exams" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
+                            <Link to="/help-with-exam" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
                         </div>
 
                         {/* CARD 3 */}

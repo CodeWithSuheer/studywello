@@ -35,7 +35,7 @@ const HomeServices = () => {
                                 Managing online coursework can be overwhelming and time-consuming, but you don't have to face it alone. With StudyWello, you gain access to over 50+ top-rated, degreed professionals who are ready to help you toward academic excellence
                             </p>
 
-                            <Link to="/online-classes" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
+                            <Link to="/help-with-class" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
                         </div>
 
                         {/* CARD 2 */}
@@ -50,7 +50,7 @@ const HomeServices = () => {
                                 Preparing for an important exam can be stressful, but it doesn’t have to be. Our team of knowledgeable experts provides in-depth concept explanations, effective study techniques, and practice resources to help you approach your exams with confidence.
                             </p>
 
-                            <Link to="/exams" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
+                            <Link to="/help-with-exam" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
                         </div>
 
                         {/* CARD 3 */}

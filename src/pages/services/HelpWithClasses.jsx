@@ -27,6 +27,7 @@ import ProcessForHelpWithClass from "../../components/ProcessForHelpWithClass";
 import FaqClass from "../home/FaqClass";
 
 import img01 from "../../assets/img01.webp"
+import { Link } from "react-router-dom";
 
 
 
@@ -46,6 +47,10 @@ const HelpWithClasses = () => {
     },
   ];
 
+  const handleMoveToTop = () => {
+    window.scroll(0, 0)
+  }
+
   return (
     <>
       <Helmet>
@@ -55,7 +60,7 @@ const HelpWithClasses = () => {
 
       {/* --------------- HERO SECTION ---------------  */}
       <section className="text-white onlineClass_backgroundImage mb-0 lg:mb-0">
-        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[95vh] relative z-10">
+        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[100vh] relative z-10">
           <div className="flex flex-col lg:flex-row justify-center items-center">
             {/* CONTENT */}
             <div className="px-4 sm:px-5 lg:flex-grow lg:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">
@@ -200,9 +205,7 @@ const HelpWithClasses = () => {
                 Online exams can be challenging due to time constraints and complexity. Connect with our law subject experts for dedicated guidance to confidently navigate your law exams and achieve top results.
               </p>
 
-              <button className="flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white">
-                READ MORE <FaArrowRightLong size={14} />
-              </button>
+              <Link to="/exams-help" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
             </div>
 
             {/* CARD 2 */}
@@ -221,9 +224,7 @@ const HelpWithClasses = () => {
                 Our subject experts thoroughly research and craft your assignments, ensuring relevance, clarity, and originality. Expect grammatically correct, plagiarism-free solutions that meet high academic standards.
               </p>
 
-              <button className="flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white">
-                READ MORE <FaArrowRightLong size={14} />
-              </button>
+              <Link to="/assignments" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
             </div>
 
             {/* CARD 3 */}
@@ -242,9 +243,7 @@ const HelpWithClasses = () => {
                 If you find yourself overwhelmed by urgent assignments or extensive coursework during your online classes, StudyWello offers flexible, reliable homework support. We provide efficient assistance at reasonable prices, including
               </p>
 
-              <button className="flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white">
-                READ MORE <FaArrowRightLong size={14} />
-              </button>
+              <Link to="/help-with-class" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
             </div>
           </div>
         </div>

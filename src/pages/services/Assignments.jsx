@@ -19,19 +19,30 @@ import Comparison from "../../components/Comparison";
 import AssignmentServices from "../../components/AssignmentServices";
 import Samples from "../../components/OurSample";
 
+// sample images
+import sample01 from '../../assets/assignment/sample01.jpeg';
+import sample02 from '../../assets/assignment/sample02.jpeg';
+import sample03 from '../../assets/assignment/sample03.jpeg';
+import sample04 from '../../assets/assignment/sample04.jpeg';
+import sample05 from '../../assets/assignment/sample05.jpeg';
+
 const Assignments = () => {
+
   const images = [
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss1.png?v=1713880333",
+      img: sample01,
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss2.png?v=1713880339",
+      img: sample02,
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss3.png?v=1713880339",
+      img: sample03,
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss4.png?v=1713880338",
+      img: sample04,
+    },
+    {
+      img: sample05,
     },
   ];
 
@@ -77,7 +88,7 @@ const Assignments = () => {
 
       {/* --------------- HERO SECTION ---------------  */}
       <section className="text-white assignment_backgroundImage mb-0 lg:mb-0">
-        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[95vh] relative z-10">
+        <div className="max-w-7xl mx-auto md:px-10 pt-28 pb-10 flex justify-center items-center min-h-[100vh] relative z-10">
           <div className="flex flex-col lg:flex-row justify-center items-center">
             {/* CONTENT */}
             <div className="lg:flex-grow md:w-1/2 xl:pr-20 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start">

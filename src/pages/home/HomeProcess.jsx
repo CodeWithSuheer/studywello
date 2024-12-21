@@ -28,7 +28,7 @@ const HomeProcess = () => {
                                 <summary className="flex px-3 py-3 cursor-pointer items-center justify-between gap-1.5 text-gray-900">
                                     <h2 className="text-lg font-medium flex items-center pl-3">
                                         <span><img className='size-10 mr-3' src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/file_1_2.png?v=1713359000" alt="" /></span>
-                                        Step 1: Submit Your Requirements
+                                        Provide Order Details
                                     </h2>
 
                                     <span className="ml-auto bg-blue-500 text-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
@@ -38,7 +38,7 @@ const HomeProcess = () => {
 
                                 {/* TEXT */}
                                 <p className="mt-1 px-4 pb-4 leading-relaxed text-gray-700">
-                                    Share the details of your assignment—topic, academic level, deadline, formatting guidelines, and any specific instructions. The more we know, the better we can tailor our service.
+                                    Begin by sharing the essential information about your task—be it an assignment, exam, or online class support request. Include the subject, topic, academic level, deadline, and any specific instructions or requirements to help us tailor our services.
                                 </p>
                             </details>
 
@@ -47,7 +47,7 @@ const HomeProcess = () => {
                                 <summary className="flex px-3 py-3 cursor-pointer items-center justify-between gap-1.5 text-gray-900">
                                     <h2 className="text-lg font-medium flex items-center pl-3">
                                         <span><img className='size-10 mr-3' src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/file_1.png?v=1713358897" alt="" /></span>
-                                        Step 2: Receive a Personalized Quote
+                                        Get a Price Quote
                                     </h2>
 
                                     <span className="ml-auto bg-blue-500 text-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
@@ -57,7 +57,7 @@ const HomeProcess = () => {
 
                                 {/* TEXT */}
                                 <p className="mt-1 px-4 pb-4 leading-relaxed text-gray-700">
-                                    We'll analyze your requirements and present a fair, no-obligation quote. Once you're satisfied, proceed with a secure payment method of your choice.
+                                    Once we have your details, we'll present a transparent price quote. We believe in fairness, so there are no hidden fees or unexpected costs.
                                 </p>
                             </details>
 
@@ -66,7 +66,7 @@ const HomeProcess = () => {
                                 <summary className="flex px-3 py-3 cursor-pointer items-center justify-between gap-1.5 text-gray-900">
                                     <h2 className="text-lg font-medium flex items-center pl-3">
                                         <span><img className='size-10 mr-3' src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/file_3.png?v=1713358898" alt="" /></span>
-                                        Step 3: Expert in Action
+                                        Make Payment
                                     </h2>
 
                                     <span className="ml-auto bg-blue-500 text-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
@@ -76,7 +76,7 @@ const HomeProcess = () => {
 
                                 {/* TEXT */}
                                 <p className="mt-1 px-4 pb-4 leading-relaxed text-gray-700">
-                                    We match your assignment with the ideal subject expert. They'll craft a high-quality, original piece that aligns perfectly with your professor's expectations and academic standards.
+                                    After reviewing the quote, choose a payment method that's most convenient for you. We offer multiple secure online payment options for a seamless transaction.
                                 </p>
                             </details>
 
@@ -85,7 +85,7 @@ const HomeProcess = () => {
                                 <summary className="flex px-3 py-3 cursor-pointer items-center justify-between gap-1.5 text-gray-900">
                                     <h2 className="text-lg font-medium flex items-center pl-3">
                                         <span><img className='size-10 mr-3' src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/file_1_1.png?v=1713358897" alt="" /></span>
-                                        Step 4: Review & Request Revisions
+                                        Get Your Work Done
                                     </h2>
 
                                     <span className="ml-auto bg-blue-500 text-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
@@ -95,10 +95,9 @@ const HomeProcess = () => {
 
                                 {/* TEXT */}
                                 <p className="mt-1 px-4 pb-4 leading-relaxed text-gray-700">
-                                    Receive your completed assignment before the deadline. Review it carefully and request revisions if needed—we offer unlimited edits until you're completely satisfied.
+                                    Our experts will begin working on your project promptly, prioritizing quality and timeliness. Upon completion, we'll deliver the final draft, and you're welcome to request revisions as needed.
                                 </p>
                             </details>
-
                         </div>
 
                         {/* IMAGE */}

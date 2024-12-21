@@ -58,56 +58,6 @@ const About = () => {
                 </div>
             </section>
 
-
-            {/* ----------- OUR SERVICES -----------  */}
-            {/* <section className='bg-white'>
-                <div className="max-w-6xl mx-auto pt-8 pb-20">
-                    <h3 className="mb-1 font-medium text-md text-[#1A73E8] text-center">Services</h3>
-                    <h2 className="mb-3 font-bold text-3xl md:text-4xl w-[95%] sm:w-[100%] mx-auto text-[#272727] text-center">Our Top Services</h2>
-
-
-                    <div className="mt-10 grid grid-cols-1 gap-5 lg:grid-cols-3 lg:gap-8 sm:px-10 px-4">
-
-                        <div className="service_card group box_shadow px-6 py-8 rounded-2xl bg-white hover:bg-[#1A73E8]">
-
-                            <div className="mb-3 logo w-16 h-16 p-1.5 rounded-xl bg-[#E8F1FD]">
-                                <img src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/question_1.png?v=1713360866" alt="" />
-                            </div>
-
-                            <h3 className="mb-2 font-medium text-xl text-[#1A73E8] group-hover:text-white">Online Class Help</h3>
-                            <p className="mb-3 sm:mb-4 text-sm leading-6 font-normal text-black group-hover:text-white">Our online class help service is designed to provide you with the support you need to succeed in your coursework. Whether you're struggling to keep up with your online classes, or simply need some extra help to....</p>
-
-                            <button className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></button>
-                        </div>
-
-                        <div className="service_card group box_shadow px-6 py-8 rounded-2xl bg-white hover:bg-[#1A73E8]">
-
-                            <div className="mb-3 logo w-16 h-16 p-1.5 rounded-xl bg-[#E8F1FD]">
-                                <img src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/question_1.png?v=1713360866" alt="" />
-                            </div>
-
-                            <h3 className="mb-2 font-medium text-xl text-[#1A73E8] group-hover:text-white">Online Class Help</h3>
-                            <p className="mb-3 sm:mb-4 text-sm leading-6 font-normal text-black group-hover:text-white">Our online class help service is designed to provide you with the support you need to succeed in your coursework. Whether you're struggling to keep up with your online classes, or simply need some extra help to....</p>
-
-                            <button className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></button>
-                        </div>
-
-                        <div className="service_card group box_shadow px-6 py-8 rounded-2xl bg-white hover:bg-[#1A73E8]">
-
-                            <div className="mb-3 logo w-16 h-16 p-1.5 rounded-xl bg-[#E8F1FD]">
-                                <img src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/question_1.png?v=1713360866" alt="" />
-                            </div>
-
-                            <h3 className="mb-2 font-medium text-xl text-[#1A73E8] group-hover:text-white">Online Class Help</h3>
-                            <p className="mb-3 sm:mb-4 text-sm leading-6 font-normal text-black group-hover:text-white">Our online class help service is designed to provide you with the support you need to succeed in your coursework. Whether you're struggling to keep up with your online classes, or simply need some extra help to....</p>
-
-                            <button className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></button>
-                        </div>
-
-                    </div>
-                </div>
-            </section> */}
-
             {/* --------------- SERVICES ---------------  */}
             <Services />
         </>

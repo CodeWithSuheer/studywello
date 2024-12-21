@@ -7,7 +7,7 @@ import { IoChatbubbleSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
 
-const EmailFormExamsHelp = () => {
+const EmailFormForDoMyClass = () => {
     const [loading, setLoading] = useState(false);
 
     const [formdata, setFormdata] = useState({
@@ -75,7 +75,7 @@ const EmailFormExamsHelp = () => {
         <>
             <div className="w-full text-center bg-[#F2EFFF] text-black rounded-xl shadow-xl">
 
-                <div className="box px-2 bg-blue-200 text-blue-700 font-semibold py-4 rounded-t-xl text-md sm:text-lg tracking-wide">15% Off! 🌟 on Your First Exams</div>
+                <div className="box px-2 bg-blue-200 text-blue-700 font-semibold py-4 rounded-t-xl text-md sm:text-lg tracking-wide">15% Off! 🌟 on Your First Online Class</div>
 
                 <div className="content px-3 sm:px-6 mt-6 pb-6">
                     <h2 className="mb-4 text-black text-2xl font-semibold">Need Expert Help with Your Online Exam?<span className="text-[#1A73E8]"> Chat Now</span></h2>
@@ -153,4 +153,4 @@ const EmailFormExamsHelp = () => {
     )
 }
 
-export default EmailFormExamsHelp
+export default EmailFormForDoMyClass

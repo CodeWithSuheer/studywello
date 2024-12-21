@@ -68,7 +68,7 @@ const EmailForm = () => {
         <>
             <div className="w-full text-center bg-[#F2EFFF] text-black rounded-xl shadow-xl">
 
-                <div className="box bg-blue-200 text-blue-700 font-semibold py-4 rounded-t-xl text-lg sm:text-2xl tracking-wide">50% Off! 🌟 on your first order</div>
+                <div className="box bg-blue-200 text-blue-700 font-semibold py-4 rounded-t-xl text-lg sm:text-2xl tracking-wide">15% Off! 🌟 on your first order</div>
 
                 <div className="content px-3 sm:px-6 mt-6 pb-8">
                     <h2 className="mb-4 text-black text-2xl font-semibold">Hire someone to take your online class?<span className="text-[#1A73E8]"> Chat Now</span></h2>

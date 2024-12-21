@@ -57,16 +57,20 @@ const Proofs = () => {
           </h2>
 
           {/* --------------- CONTENT ---------------  */}
-          <div className="mt-12 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
-            {images.map((data, index) => (
-              <div key={index} className="my-3">
-                <img
-                  className="rounded-lg h-full border border-gray-300"
-                  src={data.img}
-                  alt=""
-                />
-              </div>
-            ))}
+          <div className="onlineClass">
+            <h4 className="mt-12 text-[#272727] text-lg md:text-2xl text-start font-semibold">Online Class</h4>
+
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+              {images.map((data, index) => (
+                <div key={index} className="my-3">
+                  <img
+                    className="rounded-lg h-full border border-gray-300"
+                    src={data.img}
+                    alt=""
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

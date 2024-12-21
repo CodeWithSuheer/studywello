@@ -65,9 +65,9 @@ const HomePage = () => {
               <h2 className="mainHeading mb-5">
                 Your Trusted Academic Partner for Exams, Assignments & Online Classes
               </h2>
-              <p className="mb-3 sm:text-md md:text-md xl:text-lg font-normal">
+              {/* <p className="mb-3 sm:text-md md:text-md xl:text-lg font-normal">
                 Overwhelmed by coursework? Looking to excel in complex subjects? StudyWello connects you with seasoned academic professionals who provide personalized guidance, helping you learn more efficiently, gain confidence, and achieve better results.
-              </p>
+              </p> */}
 
               {/* <button onClick={() => setIsOpen(true)}>
                   Open Modal

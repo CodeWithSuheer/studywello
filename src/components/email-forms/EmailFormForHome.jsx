@@ -75,7 +75,7 @@ const EmailFormForHome = () => {
         <>
             <div className="w-full text-center bg-[#F2EFFF] text-black rounded-xl shadow-xl">
 
-                <div className="box px-2 bg-blue-200 text-blue-700 font-semibold py-4 rounded-t-xl text-md sm:text-lg tracking-wide">50% Off! 🌟 on Your First Exam Assistance Order</div>
+                <div className="box px-2 bg-blue-200 text-blue-700 font-semibold py-4 rounded-t-xl text-md sm:text-lg tracking-wide">15% Off! 🌟 on Your First Exam Assistance Order</div>
 
                 <div className="content px-3 sm:px-6 mt-6 pb-8">
                     <h2 className="mb-4 text-black text-2xl font-semibold">Get Instant Help In Online Class, Exams, Assignments?<span className="text-[#1A73E8]"> Chat Now</span></h2>
