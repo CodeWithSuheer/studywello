@@ -30,20 +30,46 @@ import img01 from "../../assets/img01.webp"
 import { Link } from "react-router-dom";
 
 
+// classes
+import classesimg01 from '../../assets/samples-classes/img01.jpeg'
+import classesimg02 from '../../assets/samples-classes/img02.jpeg'
+import classesimg03 from '../../assets/samples-classes/img03.jpeg'
+import classesimg04 from '../../assets/samples-classes/img04.jpeg'
+import classesimg05 from '../../assets/samples-classes/img05.jpeg'
+import classesimg06 from '../../assets/samples-classes/img06.jpeg'
+import classesimg07 from '../../assets/samples-classes/img07.jpeg'
+import classesimg08 from '../../assets/samples-classes/img08.jpeg'
+import classesimg10 from '../../assets/samples-classes/img10.jpeg'
+
 
 const HelpWithClasses = () => {
   const images = [
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss1.png?v=1713880333",
+      img: classesimg01,
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss2.png?v=1713880339",
+      img: classesimg02,
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss3.png?v=1713880339",
+      img: classesimg03,
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss4.png?v=1713880338",
+      img: classesimg04,
+    },
+    {
+      img: classesimg05,
+    },
+    {
+      img: classesimg06,
+    },
+    {
+      img: classesimg07,
+    },
+    {
+      img: classesimg08,
+    },
+    {
+      img: classesimg10,
     },
   ];
 
@@ -205,7 +231,7 @@ const HelpWithClasses = () => {
                 Online exams can be challenging due to time constraints and complexity. Connect with our law subject experts for dedicated guidance to confidently navigate your law exams and achieve top results.
               </p>
 
-              <Link to="/exams-help" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
+              <Link to="/help-with-exam" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
             </div>
 
             {/* CARD 2 */}

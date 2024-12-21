@@ -63,21 +63,16 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
           {/* SERVICES */}
-          <Route path="/exams" element={<Exams />} />
-          <Route path="/assignments" element={<Assignments />} />
-          <Route path="/do-my-class" element={<DoMyClass />} />
-
-          {/* HIDDEN PAGES */}
-          {/* <Route path="/online-classes" element={<OnlineClasses />} /> */}
-
-          <Route path="/exams-help" element={<ExamsHelp />} />
-
-          {/* NEW PAGES */}
-          <Route path="/help-with-exam" element={<HelpWithExams />} />
           <Route path="/help-with-class" element={<HelpWithClasses />} />
+          <Route path="/help-with-exam" element={<HelpWithExams />} />
+          <Route path="/assignments" element={<Assignments />} />
+          
+          {/* <Route path="/exams" element={<Exams />} /> */}
+          {/* <Route path="/do-my-class" element={<DoMyClass />} /> */}
+          {/* <Route path="/online-classes" element={<OnlineClasses />} /> */}
+          {/* <Route path="/exams-help" element={<ExamsHelp />} /> */}
         </Routes>
 
-        {/* WhatsApp button */}
         <WhatsappButton />
 
         <Footer />

@@ -18,19 +18,25 @@ import img from "./img1.jpg";
 import EmailFormForHelpWithExams from "../../components/email-forms/EmailFormForHelpWithExams";
 
 
+// exams
+import examimg01 from '../../assets/sample-exam/img01.jpeg'
+import examimg02 from '../../assets/sample-exam/img02.jpeg'
+import examimg03 from '../../assets/sample-exam/img03.jpeg'
+import examimg04 from '../../assets/sample-exam/img04.jpeg'
+
 const HelpWithExams = () => {
   const images = [
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss1.png?v=1713880333",
+      img: examimg01,
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss2.png?v=1713880339",
+      img: examimg02,
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss3.png?v=1713880339",
+      img: examimg03,
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss4.png?v=1713880338",
+      img: examimg04,
     },
   ];
 
