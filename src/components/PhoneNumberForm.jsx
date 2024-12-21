@@ -23,13 +23,13 @@ const PhoneNumberForm = () => {
         setLoading(true)
         try {
             await emailjs.send(
-                'service_6xm8ezx',
-                'template_yj3mw4n',
+                'service_oj7o6s8',
+                'template_rono4pa',
                 {
                     phone: formdata.phone,
                 },
                 {
-                    publicKey: '71BqWuSx0QJ07BuCf',
+                    publicKey: 'AMubOSywU-D9bjMSb',
                 },
             );
 
