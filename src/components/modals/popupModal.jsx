@@ -53,16 +53,16 @@ const OpeningModal = ({ isOpen, onClose }) => {
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={onClose} style={{ zIndex: '999' }}>
-            <div className="relative bg-white rounded-lg p-6 w-full max-w-lg" onClick={(e) => e.stopPropagation()}>
+            <div className="relative bg-white rounded-lg p-4 m-2 sm: w-full max-w-lg" onClick={(e) => e.stopPropagation()}>
                 {/* Close Button */}
-                <button onClick={onClose} className="absolute cursor-pointer right-4 top-4 text-gray-500 hover:text-gray-700">
+                <button onClick={onClose} className="absolute cursor-pointer z-40 right-4 top-4 text-gray-500 hover:text-gray-700">
                     <RxCross2 className="w-6 h-6" />
                 </button>
 
                 {/* Avatar Grid */}
                 <div className="relative h-32 mb-4">
                     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                        <img src={img06} alt="" className="w-20 h-20 rounded-full border-2 border-white shadow-lg" />
+                        <img src={img06} alt="" className="h-16 w-16 sm:w-20 sm:h-20 rounded-full border-2 border-white shadow-lg" />
                     </div>
                     {avatarImages.map((imgSrc, i) => (
                         <div
@@ -80,22 +80,22 @@ const OpeningModal = ({ isOpen, onClose }) => {
                 </div>
 
                 {/* Content */}
-                <div className="text-center space-y-3">
-                    <h2 className="text-3xl font-bold">Act Fast!</h2>
-                    <div className="text-xl">
+                <div className="text-center space-y-2 sm:space-y-3">
+                    <h2 className="text-2xl sm:text-3xl font-bold">Act Fast!</h2>
+                    <div className="text-lg sm:text-xl">
                         Get <span className="text-[#1A73E8] font-semibold">15%</span> Off Any Service
                     </div>
-                    <p className="text-gray-600 text-md">
+                    <p className="text-gray-600 text-sm sm:text-md">
                         Enter your details to redeem your discount before time runs out!
                     </p>
 
                     {/* Timer */}
                     <div className="my-3">
                         <p className="text-gray-500 mb-2">Hurry, time is running out!</p>
-                        <div className="text-5xl font-bold text-[#1A73E8]">
+                        <div className="text-4xl sm:text-5xl font-bold text-[#1A73E8]">
                             {String(timeLeft.minutes).padStart(2, '0')}:
                             {String(timeLeft.seconds).padStart(2, '0')}
-                            <div className="flex justify-center text-sm font-normal text-gray-500 mt-1">
+                            <div className="flex justify-center text-xs sm:text-sm font-normal text-gray-500 mt-1">
                                 <span className="w-16">MIN</span>
                                 <span className="w-16">SEC</span>
                             </div>
@@ -104,7 +104,7 @@ const OpeningModal = ({ isOpen, onClose }) => {
 
                     {/* Form */}
                     <form onSubmit={handleSubmit} className="space-y-3">
-                        <div className="mt-2 fields grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-2">
+                        <div className="mt-2 fields grid grid-cols-1 gap-1 lg:grid-cols-2 lg:gap-2">
                             <div className="mb-2">
                                 <input
                                     id="email"
@@ -137,7 +137,7 @@ const OpeningModal = ({ isOpen, onClose }) => {
                                 TrustPilot
                             </div>
                             <div className="mb-1 text-sm text-gray-500">
-                                TrustScore 4.2</div>
+                                TrustScore 4.5</div>
                             <div className="flex">
                                 {[...Array(5)].map((_, i) => (
                                     <RiStarSFill className="p-[1px] w-5 h-5 bg-green-500 text-[#fff] mx-[2px]" />

@@ -25,6 +25,7 @@ import sample02 from '../../assets/assignment/sample02.jpeg';
 import sample03 from '../../assets/assignment/sample03.jpeg';
 import sample04 from '../../assets/assignment/sample04.jpeg';
 import sample05 from '../../assets/assignment/sample05.jpeg';
+import FaqAssignment from "../home/FaqAssignment";
 
 const Assignments = () => {
 
@@ -555,7 +556,7 @@ const Assignments = () => {
       <Subject heading="Subjects We have Professionals For" />
 
       {/* --------------- FAQ'S ---------------  */}
-      <Faq />
+      <FaqAssignment />
 
       {/* --------------- TESTIMONIAL ---------------  */}
       <Testimonial />

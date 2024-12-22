@@ -24,6 +24,10 @@ import examimg02 from '../../assets/sample-exam/img02.jpeg'
 import examimg03 from '../../assets/sample-exam/img03.jpeg'
 import examimg04 from '../../assets/sample-exam/img04.jpeg'
 
+// GEDTest
+import GEDTestimg01 from '../../assets/GEDTest/img01.jpeg'
+import GEDTestimg02 from '../../assets/GEDTest/img02.jpeg'
+
 const HelpWithExams = () => {
   const images = [
     {
@@ -37,6 +41,12 @@ const HelpWithExams = () => {
     },
     {
       img: examimg04,
+    },
+    {
+      img: GEDTestimg01,
+    },
+    {
+      img: GEDTestimg02,
     },
   ];
 

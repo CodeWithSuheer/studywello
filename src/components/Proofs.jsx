@@ -217,7 +217,7 @@ const Proofs = () => {
 
           {/* GEDTest */}
           <div className="GEDTest">
-            <h4 className="mt-12 text-[#272727] text-lg md:text-2xl text-start font-semibold">GEDTest</h4>
+            <h4 className="mt-12 text-[#272727] text-lg md:text-2xl text-start font-semibold">GED Test</h4>
 
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
               {GEDTest.map((data, index) => (
