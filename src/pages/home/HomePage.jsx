@@ -26,13 +26,13 @@ import FaqHome from "./FaqHome";
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsOpen(true);
-    }, 1500);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsOpen(true);
+  //   }, 1500);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   const tick = (
     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5" /></svg>
@@ -208,10 +208,10 @@ const HomePage = () => {
 
 
       {/* Upload Modal */}
-      <OpeningModal
+      {/* <OpeningModal
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-      />
+      /> */}
     </>
   );
 };
