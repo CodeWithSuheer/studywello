@@ -258,7 +258,7 @@ const DoMyClass = () => {
                 revisions.
               </p>
 
-              <Link to="/help-with-class" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
+              <Link to="/online-classes" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
             </div>
           </div>
         </div>

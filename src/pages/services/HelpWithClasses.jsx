@@ -231,7 +231,7 @@ const HelpWithClasses = () => {
                 Online exams can be challenging due to time constraints and complexity. Connect with our law subject experts for dedicated guidance to confidently navigate your law exams and achieve top results.
               </p>
 
-              <Link to="/help-with-exam" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
+              <Link to="/exams-help" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
             </div>
 
             {/* CARD 2 */}
@@ -269,7 +269,7 @@ const HelpWithClasses = () => {
                 If you find yourself overwhelmed by urgent assignments or extensive coursework during your online classes, StudyWello offers flexible, reliable homework support. We provide efficient assistance at reasonable prices, including
               </p>
 
-              <Link to="/help-with-class" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
+              <Link to="/online-classes" onClick={handleMoveToTop} className='flex items-center gap-2 text-md font-medium text-[#1A73E8] group-hover:text-white'>READ MORE <FaArrowRightLong size={14} /></Link>
             </div>
           </div>
         </div>

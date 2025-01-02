@@ -58,10 +58,12 @@ const Footer = () => {
                             <ul className="mt-3 space-y-2">
                                 {[
                                     // { label: "Do My Class", to: "/do-my-class" },
-                                    // { label: "Exams Help", to: "/exams-help" },
-                                    { label: "Help With Class", to: "/help-with-class" },
-                                    { label: "Help With Exam", to: "/help-with-exam" },
-                                    { label: "Assignments", to: "/assignments" }
+                                    // { label: "Help With Class", to: "/help-with-class" },
+                                    // { label: "Help With Exam", to: "/help-with-exam" },
+                                    { label: "Online Classes", to: "/online-classes" },
+                                    { label: "Exams Help", to: "/exams-help" },
+                                    { label: "Assignments", to: "/assignments" },
+                                    { label: "Samples", to: "/samples" },
                                 ].map((link) => (
                                     <li key={link.to}>
                                         <Link

@@ -224,18 +224,27 @@ const Header = () => {
                         </Link>
                       )} */}
 
-                      {/* <Link
+                      <Link
+                        to="/online-classes"
+                        onClick={handleLinkClick}
+                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
+                      >
+                        Online Classes
+                      </Link>
+
+                      <hr className="border-gray-200" />
+                      <Link
                         to="/exams-help"
                         onClick={handleLinkClick}
                         className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
                       >
                         Exams Help
-                      </Link> */}
+                      </Link>
 
-                      {/* <hr className="border-gray-200" /> */}
+                      <hr className="border-gray-200" />
 
 
-                      <Link
+                      {/* <Link
                         to="/help-with-class"
                         onClick={handleLinkClick}
                         className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100"
@@ -253,7 +262,7 @@ const Header = () => {
                         Help With Exam
                       </Link>
 
-                      <hr className="border-gray-200" />
+                      <hr className="border-gray-200" /> */}
 
                       <Link
                         to="/assignments"
